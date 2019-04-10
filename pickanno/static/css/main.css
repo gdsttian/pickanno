@@ -1,0 +1,26 @@
+.page-header {
+    background-color: #4297d7;
+    padding: 1em;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#spinner {
+    color: white;
+    display: none;
+}
+
+.page-content {
+    margin: 1em;
+}
+
+ul.collection-listing {
+    list-style: none;
+}
+
+ul.document-listing {
+    list-style: none;
+}

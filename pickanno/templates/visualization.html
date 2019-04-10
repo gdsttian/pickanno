@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/visualization.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/'+config['FONT_FILE']) }}">
+    <style type="text/css">
+      .page-content {
+          font-family: 'Open Sans', sans-serif;
+          font-size: {{ config['FONT_SIZE'] }}px;
+      }
+      .visualization {
+          width: {{ config['LINE_WIDTH'] }}px;
+      }
+    </style>
+    <script>
+const PICK_ANNO_URL = "{{ url_for('view.pick_annotation', collection=collection, document=document) }}";
+      
+const HOTKEYS = {
+{% for key, value in config['HOTKEYS'].items() %}
+    "{{ key }}": "{{ value }}",
+{% endfor %}
+};
+    </script>
+    <script src="{{ url_for('static', filename='js/pickanno.js') }}"></script>
+    <script>
+      window.onload = load;
+    </script>
+{% endblock %}
+
+{% block content %}
+<div class="visualization">
+  <div class="pa-above">{{ content.above|safe }}</div>
+  <div class="pa-mid-row">
+    <div class="pa-mid-left">{{ content.left|safe }}</div>
+    <div class="pa-mid-centre">{% for k, s in content.spans.items() %}
+      <div id="candidate-{{ k }}" class="pa-candidate">{{ s|safe }}</div>{% endfor %}
+    </div>
+    <div class="pa-mid-right">{{ content.right|safe }}</div>
+  </div>
+  <div class="pa-below">{{ content.below|safe }}</div>
+</div>
+{% endblock %}
