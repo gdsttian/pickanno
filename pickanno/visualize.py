@@ -62,23 +62,6 @@ def visualize_candidates(document_data):
         'right': so2html(right, []),
         'below': so2html(below, []),
     }
-    
-    # # generate a visualization for each (filtered) annotation set
-    # visualized_spans = []
-    # for key, annset in annsets.items():
-    #     visualized_spans.append(standoff_to_html(span, annset))
-        
-    # # TODO
-    # # return standoff_to_html(text, flattened)
-
-    # def so2html(t, a):
-    #     return standoff_to_html(t, a)
-
-    # return (so2html(above, []) +
-    #         so2html(left, []) +
-    #         ''.join(visualized_spans) +
-    #         so2html(right, []) +
-    #         so2html(below, []))
 
 
 def _adjust_offsets(annsets, offset):
@@ -151,7 +134,14 @@ def _split_text(text, start, end, line_width=None):
     below_text = text[end+len(right_text):]
 
     assert above_text+left_text+span_text+right_text+below_text == text
-    
+
+    # logging
+    lw, sw, rw = (_text_width(t) for t in (left_text, span_text, right_text))
+    tw = lw + sw + rw
+    app.logger.info('_split_text(): split line "{}"---"{}"---"{}",'
+                    'widths {}+{}+{}={}'.format(left_text, span_text,
+                                                right_text, lw, sw, rw, tw))
+
     return above_text, left_text, span_text, right_text, below_text
 
 
@@ -177,7 +167,6 @@ def _text_width(text, point_size=None, font_file=None):
         else:
             total += glyphset['.notdef'].width
     total_points = total * point_size / units_per_em
-    app.logger.info('_text_width("{}"): {}'.format(text, total_points))
     return total_points
 _text_width.cache = {}
 
