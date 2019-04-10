@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, redirect
 
 
 def create_app():
@@ -14,5 +14,9 @@ def create_app():
 
     from . import view
     app.register_blueprint(view.bp)
+
+    @app.route('/')
+    def root_redirect():
+        return redirect('pickanno')
 
     return app
