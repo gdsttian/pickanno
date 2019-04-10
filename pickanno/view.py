@@ -64,7 +64,8 @@ def show_alternative_annotations(collection, document):
     document_data = db.get_document_data(collection, document)
     content = visualize_candidates(document_data)
     return render_template('visualization.html', collection=collection,
-                           document=document, content=content)
+                           document=document, content=content,
+                           metadata=document_data.metadata)
 
 
 @bp.route('/collection/<collection>/<document>/pick')
@@ -74,15 +75,18 @@ def pick_annotation(collection, document):
     keys = list(document_data.annsets.keys())
     choice = request.args.get('choice')
     if choice == PICK_NONE:
-        picked = []
+        accepted, rejected = [], keys
     elif choice == PICK_FIRST:
-        picked = [keys[0]]
+        accepted, rejected = [keys[0]], keys[1:]
     elif choice == PICK_LAST:
-        picked = [keys[-1]]
+        accepted, rejected = [keys[-1]], keys[:-1]
     elif choice == PICK_ALL:
-        picked = keys
+        accepted, rejected = keys, []
     elif choice in keys:
-        picked = [choice]
+        accepted, rejected = [choice], [k for k in keys if k != choice]
     else:
         app.logger.error('invalid choice {}'.format(choice))
-    return jsonify({ 'picked': picked });
+    return jsonify({
+        'accepted': accepted,
+        'rejected': rejected,
+    });

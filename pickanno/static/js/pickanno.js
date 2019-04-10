@@ -11,16 +11,21 @@ function updateSpinner() {
     }
 }
 
-function updatePicks(picked) {
+function updatePicks() {
     var candidates = document.getElementsByClassName("pa-candidate");
+    var accepted = METADATA['accepted'];
+    var rejected = METADATA['rejected'];
     for (let i=0; i<candidates.length; i++) {
 	let element = candidates[i];
 	let cid = element.id.replace("candidate-", "");
-	if (picked.includes(cid)) {
+	if (accepted.includes(cid)) {
 	    element.classList.add("accepted");
 	    element.classList.remove("rejected");
-	} else {
+	} else if(rejected.includes(cid)) {
 	    element.classList.add("rejected");
+	    element.classList.remove("accepted");
+	} else {
+	    element.classList.remove("rejected");
 	    element.classList.remove("accepted");
 	}
     }
@@ -59,6 +64,8 @@ async function pickCandidate(pick) {
     var url = makeUrl(PICK_ANNO_URL, { "choice":  pick });
     var response = await fetch(url);
     var data = await response.json();
+    METADATA['accepted'] = data['accepted'];
+    METADATA['rejected'] = data['rejected'];
     updatePicks(data.picked);
     spinDown();
     return data;
@@ -83,4 +90,5 @@ function load() {
 	    pickCandidate(cid);
 	};
     }
+    updatePicks();
 }

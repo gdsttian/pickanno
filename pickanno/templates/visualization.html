@@ -15,12 +15,10 @@
     </style>
     <script>
 const PICK_ANNO_URL = "{{ url_for('view.pick_annotation', collection=collection, document=document) }}";
-      
-const HOTKEYS = {
-{% for key, value in config['HOTKEYS'].items() %}
-    "{{ key }}": "{{ value }}",
-{% endfor %}
-};
+
+const HOTKEYS = {{ config['HOTKEYS']|tojson(indent=4) }};
+
+const METADATA = {{ metadata|tojson(indent=4) }};
     </script>
     <script src="{{ url_for('static', filename='js/pickanno.js') }}"></script>
     <script>
