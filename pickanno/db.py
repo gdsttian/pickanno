@@ -1,7 +1,7 @@
 import os
 import json
 
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 from glob import iglob
 from tempfile import mkstemp
 
@@ -12,14 +12,24 @@ from .standoff import parse_standoff
 
 
 class DocumentData(object):
-    """Text with alternative annotation sets and designated candidate
-    annotation."""
+    """Text with alternative annotation sets, designated candidate
+    annotation, and possible judgments."""
     def __init__(self, text, annsets, metadata):
         self.text = text
         self.annsets = annsets
         self.metadata = metadata
         self.candidate = self.get_annotation(self.candidate_annset,
                                              self.candidate_id)
+
+    def accepted_annsets(self):
+        return self.metadata.get('accepted', [])
+
+    def rejected_annsets(self):
+        return self.metadata.get('rejected', [])
+
+    def judgment_complete(self):
+        judged = set(self.accepted_annsets()) | set(self.rejected_annsets())
+        return not any (a for a in self.annsets if not a in judged)
 
     def filter_to_candidate(self):
         """Filter annsets to annotations overlapping candidate."""
@@ -61,22 +71,36 @@ class FilesystemData(object):
                 subdirs.append(name)
         return subdirs
 
-    def get_documents(self, collection, include_data=False):
-        documents, data_by_root = [], {}
+    def _get_contents_by_ext(self, collection):
+        """Get collection contents organized by file extension."""
+        contents_by_ext = defaultdict(list)
         collection_dir = os.path.join(self.root_dir, collection)
         for name in sorted(os.listdir(collection_dir)):
             path = os.path.join(collection_dir, name)
             if os.path.isfile(path):
                 root, ext = os.path.splitext(name)
-                if ext == '.txt':
-                    documents.append(root)
-                elif ext == '.json' and include_data:
-                    info_by_root[root] = self.get_document_metadata(
-                        collection, root)
-        if not include_data:
+                contents_by_ext[ext].append(root)
+        return contents_by_ext
+
+    def get_documents(self, collection, include_status=False):
+        contents_by_ext = self._get_contents_by_ext(collection)
+        documents = contents_by_ext['.txt']
+        if not include_status:
+            # simple listing
             return documents
         else:
-            return [(d, info_by_root.get(d, {})) for d in documents]
+            statuses = []
+            for root in documents:
+                try:
+                    document_data = self.get_document_data(collection, root)
+                    if document_data.judgment_complete():
+                        status = app.config['STATUS_COMPLETE']
+                    else:
+                        status = app.config['STATUS_INCOMPLETE']
+                except:
+                    status = app.config['STATUS_ERROR']
+                statuses.append(status)
+            return documents, statuses
 
     def get_neighbouring_documents(self, collection, document):
         documents = self.get_documents(collection)
@@ -90,7 +114,8 @@ class FilesystemData(object):
         with open(path, encoding='utf-8') as f:
             return f.read()
 
-    def get_document_annotation(self, collection, document, annset, parse=False):
+    def get_document_annotation(self, collection, document, annset,
+                                parse=False):
         path = os.path.join(self.root_dir, collection, document+'.'+annset)
         with open(path, encoding='utf-8') as f:
             data = f.read()

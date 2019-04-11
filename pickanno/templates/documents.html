@@ -11,9 +11,17 @@
 {% if not documents %}
 [empty]
 {% endif %}
-{% for d in documents %}
-    <li><i class="far fa-file"></i>
-      <a href="{{ url_for('view.show_alternative_annotations', collection=collection, document=d) }}">{{ d }}</a></li>
+{% for d, status in zip(documents, statuses) %}
+    <li>{# <i class="far fa-file"></i> #}
+{% if status == config['STATUS_COMPLETE'] %}
+      <i class="fa fa-check-square"></i>
+{% elif status == config['STATUS_INCOMPLETE'] %}
+      <i class="far fa-square"></i>
+{% else %}
+      <i class="fa fa-skull"></i>
+{% endif %}
+      <a href="{{ url_for('view.show_alternative_annotations', collection=collection, document=d) }}">{{ d }}</a>
+    </li>
 {% endfor %}
   </ul>
 </ul>

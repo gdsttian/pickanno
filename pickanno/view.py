@@ -25,12 +25,8 @@ def show_collections():
 @bp.route('/<collection>/')
 def show_collection(collection):
     db = get_db()
-    documents = db.get_documents(collection)
-    return render_template(
-        'documents.html',
-        collection=collection,
-        documents=documents
-    )
+    documents, statuses = db.get_documents(collection, include_status=True)
+    return render_template('documents.html', **locals())
 
 
 @bp.route('/<collection>/<document>.txt')
@@ -103,7 +99,7 @@ def pick_annotation(collection, document):
     elif choice == PICK_ALL:
         accepted, rejected = keys, []
     elif choice == CLEAR_PICKS:
-        accepted = rejected = [], []
+        accepted, rejected = [], []
     elif choice in keys:
         accepted, rejected = [choice], [k for k in keys if k != choice]
     else:

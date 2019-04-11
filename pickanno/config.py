@@ -19,3 +19,9 @@ HOTKEYS = {
     'ArrowLeft': PICK_NONE,   # reject all candidates
     'z': CLEAR_PICKS,         # clear accept/reject
 }
+
+# Document status constants (TODO: maybe not the right place for these)
+
+STATUS_COMPLETE = 'complete'
+STATUS_INCOMPLETE = 'todo'
+STATUS_ERROR = 'ERROR'
