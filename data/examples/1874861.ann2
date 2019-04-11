@@ -1,0 +1,29 @@
+T1	Chemical 0 10	Fatty acid
+N1	Reference T1 CHEBI:35366	Fatty acid
+T2	Organism 72 84	Gadus morhua
+N2	Reference T2 NCBITaxon:8049	Gadus morhua
+T3	Chemical 265 284	phosphatidylcholine
+N3	Reference T3 MESH:D010713	phosphatidylcholine
+T4	Chemical 286 310	phosphatidylethanolamine
+N4	Reference T4 MESH:C483858	phosphatidylethanolamine
+T5	Chemical 312 332	phosphatidylinositol
+N5	Reference T5 MESH:D010716	phosphatidylinositol
+T6	Chemical 337 355	phosphatidylserine
+T7	Chemical 519 529	fatty acid
+N6	Reference T7 CHEBI:35366	fatty acid
+T8	Chemical 558 568	Fatty acid
+N7	Reference T8 CHEBI:35366	Fatty acid
+T9	Chemical 696 706	fatty acid
+N8	Reference T9 CHEBI:35366	fatty acid
+T10	Chemical 806 825	Phosphatidylcholine
+N9	Reference T10 MESH:D010713	Phosphatidylcholine
+T11	Chemical 931 955	Phosphatidylethanolamine
+N10	Reference T11 MESH:C483858	Phosphatidylethanolamine
+T12	Chemical 978 1005	polyunsaturated fatty acids
+N11	Reference T12 MESH:D005231	polyunsaturated fatty acids
+T13	Chemical 1014 1041	polyunsaturated fatty acids
+N12	Reference T13 MESH:D005231	polyunsaturated fatty acids
+T14	Chemical 1116 1136	Phosphatidylinositol
+N13	Reference T14 MESH:D010716	Phosphatidylinositol
+T15	Chemical 1233 1251	Phosphatidylserine
+T16	Chemical 1391 1398	monoene

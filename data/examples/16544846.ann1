@@ -1,0 +1,16 @@
+T1	Chemical 854 865	tolterodine
+N1	Reference T1 CID:00443878	DB01036
+T2	Chemical 930 942	desmopressin
+N2	Reference T2 CID:00027991	C06944
+T3	Chemical 962 974	desmopressin
+N3	Reference T3 CID:00027991	C06944
+T4	Chemical 979 990	tolterodine
+N4	Reference T4 CID:00443878	DB01036
+T5	Chemical 1044 1056	desmopressin
+N5	Reference T5 CID:00027991	C06944
+T6	Gene 1114 1120	3 to 6
+N6	Reference T6 SGD:YBR009C	HHF1p (Saccharomyces cerevisiae)
+N7	Reference T6 SGD:YNL030W	HHF2p (Saccharomyces cerevisiae)
+N8	Reference T6 SGD:YOR244W	ESA1 (Saccharomyces cerevisiae)
+T7	Chemical 1168 1180	desmopressin
+N9	Reference T7 CID:00027991	C06944

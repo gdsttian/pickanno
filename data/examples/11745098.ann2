@@ -1,0 +1,20 @@
+T1	Organism 103 106	rat
+N1	Reference T1 NCBITaxon:10116	rat
+T2	Organism 207 210	rat
+N2	Reference T2 NCBITaxon:10116	rat
+T3	Organism 224 229	drill
+N3	Reference T3 NCBITaxon:9568	drill
+T4	Chemical 303 306	PGA
+N4	Reference T4 MESH:D011454	PGA
+T5	Gene 805 816	cathepsin K
+N5	Reference T5 NCBIGENE:29175	cathepsin K
+T6	Chemical 815 816	K
+N6	Reference T6 MESH:D011188	K
+T7	Chemical 918 920	Ca
+N7	Reference T7 MESH:D002118	Ca
+T8	Chemical 940 942	Ca
+N8	Reference T8 MESH:D002118	Ca
+T9	Chemical 1043 1046	PGA
+N9	Reference T9 MESH:D011454	PGA
+T10	Chemical 1212 1215	PGA
+N10	Reference T10 MESH:D011454	PGA

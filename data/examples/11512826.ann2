@@ -1,0 +1,12 @@
+T1	Chemical 172 176	NaCl
+N1	Reference T1 CHEBI:26710	NaCl
+T2	Chemical 178 181	KCl
+N2	Reference T2 CHEBI:32588	KCl
+T3	Chemical 187 193	Na2SO4
+N3	Reference T3 CHEBI:32149	Na2SO4
+T4	Mutation 220 224	S45C
+N4	Reference T4 ProteinMutation:p|SUB|S|45|C	S45C
+T5	Chemical 271 273	Fe
+T6	Chemical 318 320	Ni
+T7	Chemical 697 699	Fe
+T8	Chemical 803 805	Fe

@@ -1,0 +1,12 @@
+T1	Organism 72 84	Gadus morhua
+N1	Reference T1 NCBITaxon:8049	Gadus morhua
+T2	Chemical 286 310	phosphatidylethanolamine
+N2	Reference T2 CID:00114944	CHEMBL448115
+T3	Chemical 864 871	2 n - 6
+N3	Reference T3 CID:16738716	CHEMBL2158581
+T4	Chemical 931 955	Phosphatidylethanolamine
+N4	Reference T4 CID:00114944	CHEMBL448115
+T5	Chemical 994 1005	fatty acids
+N5	Reference T5 CID:00000283	DB01942
+T6	Chemical 1030 1041	fatty acids
+N6	Reference T6 CID:00000283	DB01942

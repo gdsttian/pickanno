@@ -1,0 +1,29 @@
+T1	Organism 73 81	electron
+N1	Reference T1 NCBITaxon:1118549	Electron
+T2	Chemical 172 176	NaCl
+N2	Reference T2 CID:00005234	10% Sodium Chloride Injection
+T3	Chemical 178 181	KCl
+N3	Reference T3 CID:00004873	Chlorid draselny
+T4	Chemical 187 193	Na2SO4
+N4	Reference T4 CID:00001117	C00059
+T5	Chemical 271 275	Fe K
+N5	Reference T5 CID:18223165	AGN-PC-01S9BO
+T6	Gene 318 322	Ni K
+N6	Reference T6 ENS:MUSP00000126961	Map4k4 (Mus musculus)
+N7	Reference T6 FB:pp0072830	Q6NP15 (Drosophila melanogaster)
+N8	Reference T6 ENS:P00000482657	MAP3K14 (Homo sapiens)
+N9	Reference T6 ENS:P00000343658	MAP4K4 (Homo sapiens)
+N10	Reference T6 ENS:MUSP00000021324	Map3k14 (Mus musculus)
+N11	Reference T6 ENS:DARP00000117775	MAP4K4 (Danio rerio)
+N12	Reference T6 ENS:GALP00000008090	MAP4K4 (Gallus gallus)
+N13	Reference T6 ENS:SSCP00000008715	MAP4K4 (Sus scrofa)
+N14	Reference T6 ENS:BTAP00000009316	MAP3K14 (Bos taurus)
+N15	Reference T6 ENS:DARP00000125811	MAP3K14 (Danio rerio)
+N16	Reference T6 ENS:BTAP00000006458	MAP4K4 (Bos taurus)
+N17	Reference T6 ENS:SSCP00000018362	MAP3K14 (Sus scrofa)
+T7	Disease 667 670	bcc
+N18	Reference T7 DOID:2513	basal cell carcinoma
+T8	Chemical 697 701	Fe K
+N19	Reference T8 CID:18223165	AGN-PC-01S9BO
+T9	Chemical 803 805	Fe
+N20	Reference T9 CID:00023925	DB01592

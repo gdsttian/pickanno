@@ -1,0 +1,24 @@
+T1	Organism 0 5	Mouse
+N1	Reference T1 NCBITaxon:10090	Mus musculus
+T2	Chemical 55 74	bisphenol a-induced
+N2	Reference T2 CID:00006623	4,4'-propane-2,2-diyldiphenol
+T3	Chemical 93 99	antral
+N3	Reference T3 CID:00035864	1-anthracenecarboxaldehyde
+T4	Chemical 111 127	Bisphenol A (BPA
+N4	Reference T4 CID:00006623	4,4'-propane-2,2-diyldiphenol
+T5	Chemical 696 702	antral
+N5	Reference T5 CID:00035864	1-anthracenecarboxaldehyde
+T6	Organism 728 732	mice
+N6	Reference T6 NCBITaxon:10090	Mus musculus
+T7	Organism 819 824	mouse
+N7	Reference T7 NCBITaxon:10090	Mus musculus
+T8	Chemical 886 892	antral
+N8	Reference T8 CID:00035864	1-anthracenecarboxaldehyde
+T9	Chemical 953 959	antral
+N9	Reference T9 CID:00035864	1-anthracenecarboxaldehyde
+T10	Organism 1031 1035	mice
+N10	Reference T10 NCBITaxon:10090	Mus musculus
+T11	Chemical 1112 1129	dimethylsulfoxide
+N11	Reference T11 CID:00000679	DB01093
+T12	Organism 1658 1662	mice
+N12	Reference T12 NCBITaxon:10090	Mus musculus

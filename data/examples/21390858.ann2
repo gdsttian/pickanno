@@ -1,0 +1,14 @@
+T1	Chemical 652 674	sodium dodecyl sulfate
+N1	Reference T1 MESH:D012967	sodium dodecyl sulfate
+T2	Chemical 676 679	SDS
+N2	Reference T2 CHEBI:8984	SDS
+T3	Chemical 681 695	polyacrylamide
+N3	Reference T3 CHEBI:51135	polyacrylamide
+T4	Chemical 1036 1042	Biotin
+N4	Reference T4 MESH:D001710	Biotin
+T5	Chemical 1133 1139	biotin
+N5	Reference T5 MESH:D001710	biotin
+T6	Chemical 1150 1156	biotin
+N6	Reference T6 MESH:D001710	biotin
+T7	Chemical 1286 1292	biotin
+N7	Reference T7 MESH:D001710	biotin

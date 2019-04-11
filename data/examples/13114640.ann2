@@ -1,0 +1,4 @@
+T1	Chemical 20 30	tuberculin
+N1	Reference T1 MESH:D014373	tuberculin
+T2	Organism 59 62	man
+N2	Reference T2 NCBITaxon:9606	man

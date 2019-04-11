@@ -1,0 +1,52 @@
+T1	Chemical 32 42	amino acid
+N1	Reference T1 CHEBI:33704	amino acid
+T2	Organism 101 106	human
+N2	Reference T2 NCBITaxon:9606	human
+T3	Gene 116 123	CORS-26
+N3	Reference T3 NCBIGENE:114899	CORS-26
+T4	Gene 125 181	collagenous repeat-containing sequence of 26-kDa protein
+N4	Reference T4 NCBIGENE:114899	collagenous repeat-containing sequence of 26-kDa protein
+T5	Organism 188 194	murine
+N5	Reference T5 NCBITaxon:10090	murine
+T6	Gene 204 211	CORS-26
+N6	Reference T6 NCBIGENE:81799	CORS-26
+T7	Organism 226 231	mouse
+N7	Reference T7 NCBITaxon:10090	mouse
+T8	Organism 401 406	human
+N8	Reference T8 NCBITaxon:9606	human
+T9	Gene 407 414	CORS-26
+N9	Reference T9 NCBIGENE:114899	CORS-26
+T10	Chemical 660 670	amino acid
+N10	Reference T10 CHEBI:33704	amino acid
+T11	Organism 736 741	human
+N11	Reference T11 NCBITaxon:9606	human
+T12	Organism 796 801	human
+N12	Reference T12 NCBITaxon:9606	human
+T13	Gene 802 809	CORS-26
+N13	Reference T13 NCBIGENE:114899	CORS-26
+T14	Gene 898 905	CORS-26
+N14	Reference T14 NCBIGENE:114899	CORS-26
+T15	Organism 998 1003	human
+N15	Reference T15 NCBITaxon:9606	human
+T16	Gene 1004 1011	CORS-26
+N16	Reference T16 NCBIGENE:114899	CORS-26
+T17	Organism 1031 1036	human
+N17	Reference T17 NCBITaxon:9606	human
+T18	Organism 1100 1106	humans
+N18	Reference T18 NCBITaxon:9606	humans
+T19	Disease 1200 1212	osteosarcoma
+N19	Reference T19 MESH:D012516	osteosarcoma
+T20	Organism 1227 1232	human
+N20	Reference T20 NCBITaxon:9606	human
+T21	Disease 1233 1243	bone tumor
+N21	Reference T21 MESH:D001859	bone tumor
+T22	Gene 1285 1292	CORS-26
+N22	Reference T22 NCBIGENE:114899	CORS-26
+T23	Disease 1322 1334	osteosarcoma
+N23	Reference T23 MESH:D012516	osteosarcoma
+T24	Disease 1336 1372	chondroblastoma and giant cell tumor
+N24	Reference T24 MESH:D005870	chondroblastoma and giant cell tumor
+T25	Gene 1438 1445	CORS-26
+N25	Reference T25 NCBIGENE:114899	CORS-26
+T26	Disease 1538 1562	bone or skeletal disease
+N26	Reference T26 MESH:D001847	bone or skeletal disease

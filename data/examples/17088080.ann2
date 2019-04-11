@@ -1,0 +1,54 @@
+T1	Gene 11 17	myosin
+N1	Reference T1 NCBIGENE:79784	myosin
+T2	Gene 150 156	myosin
+N2	Reference T2 NCBIGENE:79784	myosin
+T3	Gene 183 189	myosin
+N3	Reference T3 NCBIGENE:79784	myosin
+T4	Organism 276 281	human
+N4	Reference T4 NCBITaxon:9606	human
+T5	Gene 432 438	myosin
+N5	Reference T5 NCBIGENE:79784	myosin
+T6	Chemical 821 828	Y-27632
+N6	Reference T6 MESH:C108830	Y-27632
+T7	Chemical 863 875	okadaic acid
+N7	Reference T7 MESH:D019319	okadaic acid
+T8	Chemical 979 987	NMM-II-B
+T9	Chemical 991 1000	threonine
+N8	Reference T9 CHEBI:26986	threonine
+T10	Chemical 1005 1011	serine
+N9	Reference T10 CHEBI:17822	serine
+T11	Chemical 1022 1029	Y-27632
+N10	Reference T11 MESH:C108830	Y-27632
+T12	Gene 1075 1081	myosin
+N11	Reference T12 NCBIGENE:79784	myosin
+T13	Chemical 1216 1223	Y-27632
+N12	Reference T13 MESH:C108830	Y-27632
+T14	Chemical 1227 1239	okadaic acid
+N13	Reference T14 MESH:D019319	okadaic acid
+T15	Disease 1249 1272	decreased filamentation
+N14	Reference T15 MESH:D009135	decreased filamentation
+T16	Chemical 1309 1321	okadaic acid
+N15	Reference T16 MESH:D019319	okadaic acid
+T17	Chemical 1330 1337	Y-27632
+N16	Reference T17 MESH:C108830	Y-27632
+T18	Disease 1338 1361	decreased filamentation
+N17	Reference T18 MESH:D009135	decreased filamentation
+T19	Chemical 1378 1381	DRB
+N18	Reference T19 MESH:D004004	DRB
+T20	Chemical 1456 1463	Y-27632
+N19	Reference T20 MESH:C108830	Y-27632
+T21	Chemical 1468 1480	okadaic acid
+N20	Reference T21 MESH:D019319	okadaic acid
+T22	Chemical 1497 1547	5,6-dichloro-1-beta-(D)-ribofuranosylbenzimidazole
+T23	Chemical 1549 1552	DRB
+N21	Reference T23 MESH:D004004	DRB
+T24	Chemical 1813 1820	Y-27632
+N22	Reference T24 MESH:C108830	Y-27632
+T25	Chemical 1822 1834	okadaic acid
+N23	Reference T25 MESH:D019319	okadaic acid
+T26	Chemical 1839 1842	DRB
+N24	Reference T26 MESH:D004004	DRB
+T27	Gene 2008 2014	myosin
+N25	Reference T27 NCBIGENE:79784	myosin
+T28	Gene 2161 2167	myosin
+N26	Reference T28 NCBIGENE:79784	myosin

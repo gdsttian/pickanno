@@ -1,0 +1,21 @@
+T1	Chemical 24 27	YSZ
+T2	Chemical 33 36	YSZ
+T3	Chemical 41 44	ZnO
+N1	Reference T3 CHEBI:50836	ZnO
+T4	Chemical 89 92	YSZ
+T5	Chemical 180 183	YSZ
+T6	Chemical 207 210	ZnO
+N2	Reference T6 CHEBI:50836	ZnO
+T7	Chemical 265 268	YSZ
+T8	Chemical 349 352	ZnO
+N3	Reference T8 CHEBI:50836	ZnO
+T9	Chemical 391 403	zinc acetate
+N4	Reference T9 MESH:D019345	zinc acetate
+T10	Chemical 407 415	methanol
+N5	Reference T10 MESH:D000432	methanol
+T11	Chemical 471 474	YSZ
+T12	Chemical 528 531	ZnO
+N6	Reference T12 CHEBI:50836	ZnO
+T13	Chemical 585 588	ZnO
+N7	Reference T13 CHEBI:50836	ZnO
+T14	Chemical 616 619	YSZ

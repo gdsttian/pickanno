@@ -1,0 +1,207 @@
+T1	Gene 0 20	Non-muscle myosin-II
+N1	Reference T1 FB:pp0072306	zip (Drosophila melanogaster)
+T2	Organism 276 281	human
+N2	Reference T2 NCBITaxon:9606	Homo sapiens
+T3	Gene 421 441	non-muscle myosin-II
+N3	Reference T3 FB:pp0072306	zip (Drosophila melanogaster)
+T4	Gene 445 451	NMM-II
+N4	Reference T4 FB:pp0072306	zip (Drosophila melanogaster)
+T5	Gene 478 484	NMM-II
+N5	Reference T5 FB:pp0072306	zip (Drosophila melanogaster)
+T6	Gene 511 517	NMM-II
+N6	Reference T6 FB:pp0072306	zip (Drosophila melanogaster)
+T7	Gene 520 525	actin
+N7	Reference T7 SP:BC32H8.12c.1	act1p (Schizosaccharomyces pombe)
+N8	Reference T7 FB:pp0078131	Act79B (Drosophila melanogaster)
+N9	Reference T7 ENS:GALP00000039176	ACTG1 (Gallus gallus)
+N10	Reference T7 FB:pp0100124	Act5C (Drosophila melanogaster)
+N11	Reference T7 FB:pp0071448	Act57B (Drosophila melanogaster)
+N12	Reference T7 FB:pp0082597	Act88F (Drosophila melanogaster)
+N13	Reference T7 SGD:YFL039C	ACT1p (Saccharomyces cerevisiae)
+N14	Reference T7 FB:pp0082253	Act87E (Drosophila melanogaster)
+N15	Reference T7 FB:pp0085365	Act42A (Drosophila melanogaster)
+N16	Reference T7 AT:3G46520.1	ACT12 (Arabidopsis thaliana)
+N17	Reference T7 FB:pp0081153	alphaTub84B (Drosophila melanogaster)
+N18	Reference T7 ENS:GALP00000015657	ACTB (Gallus gallus)
+N19	Reference T7 WB:T25C8.2.1	act-5 (Caenorhabditis elegans)
+N20	Reference T7 ENS:DARP00000058628	acta1b (Danio rerio)
+T8	Gene 616 622	NMM-II
+N21	Reference T8 FB:pp0072306	zip (Drosophila melanogaster)
+T9	Gene 675 681	NMM-II
+N22	Reference T9 FB:pp0072306	zip (Drosophila melanogaster)
+T10	Gene 782 803	Rho-associated kinase
+N23	Reference T10 FB:pp0074061	Rok (Drosophila melanogaster)
+T11	Chemical 821 828	Y-27632
+N24	Reference T11 CID:00448042	DB08756
+N25	Reference T11 CID:00005711	CHEMBL1994526
+T12	Chemical 863 875	okadaic acid
+N26	Reference T12 CID:00446512	CHEBI:44658
+T13	Gene 939 942	LIS
+N27	Reference T13 AT:2G41500.1	LIS (Arabidopsis thaliana)
+N28	Reference T13 AT:1G61120.1	TPS04 (Arabidopsis thaliana)
+T14	Gene 979 985	NMM-II
+N29	Reference T14 FB:pp0072306	zip (Drosophila melanogaster)
+T15	Chemical 1022 1029	Y-27632
+N30	Reference T15 CID:00448042	DB08756
+N31	Reference T15 CID:00005711	CHEMBL1994526
+T16	Gene 1122 1127	actin
+N32	Reference T16 SP:BC32H8.12c.1	act1p (Schizosaccharomyces pombe)
+N33	Reference T16 FB:pp0078131	Act79B (Drosophila melanogaster)
+N34	Reference T16 ENS:GALP00000039176	ACTG1 (Gallus gallus)
+N35	Reference T16 FB:pp0100124	Act5C (Drosophila melanogaster)
+N36	Reference T16 FB:pp0071448	Act57B (Drosophila melanogaster)
+N37	Reference T16 FB:pp0082597	Act88F (Drosophila melanogaster)
+N38	Reference T16 SGD:YFL039C	ACT1p (Saccharomyces cerevisiae)
+N39	Reference T16 FB:pp0082253	Act87E (Drosophila melanogaster)
+N40	Reference T16 FB:pp0085365	Act42A (Drosophila melanogaster)
+N41	Reference T16 AT:3G46520.1	ACT12 (Arabidopsis thaliana)
+N42	Reference T16 FB:pp0081153	alphaTub84B (Drosophila melanogaster)
+N43	Reference T16 ENS:GALP00000015657	ACTB (Gallus gallus)
+N44	Reference T16 WB:T25C8.2.1	act-5 (Caenorhabditis elegans)
+N45	Reference T16 ENS:DARP00000058628	acta1b (Danio rerio)
+T17	Gene 1133 1139	NMM-II
+N46	Reference T17 FB:pp0072306	zip (Drosophila melanogaster)
+T18	Gene 1173 1179	NMM-II
+N47	Reference T18 FB:pp0072306	zip (Drosophila melanogaster)
+T19	Chemical 1216 1223	Y-27632
+N48	Reference T19 CID:00448042	DB08756
+N49	Reference T19 CID:00005711	CHEMBL1994526
+T20	Chemical 1227 1239	okadaic acid
+N50	Reference T20 CID:00446512	CHEBI:44658
+T21	Chemical 1309 1321	okadaic acid
+N51	Reference T21 CID:00446512	CHEBI:44658
+T22	Chemical 1330 1337	Y-27632
+N52	Reference T22 CID:00448042	DB08756
+N53	Reference T22 CID:00005711	CHEMBL1994526
+T23	Gene 1392 1398	kinase
+N54	Reference T23 WB:F30A10.3.1	F30A10.3 (Caenorhabditis elegans)
+N55	Reference T23 ENS:DARP00000088337	itpkcb (Danio rerio)
+N56	Reference T23 ENS:DARP00000113169	ipmka (Danio rerio)
+N57	Reference T23 ENS:GALP00000043211	IP6K3 (Gallus gallus)
+N58	Reference T23 FB:pp0071578	CG10082 (Drosophila melanogaster)
+N59	Reference T23 ENS:DARP00000012557	itpkb (Danio rerio)
+N60	Reference T23 ENS:MUSP00000069851	Itpkb (Mus musculus)
+N61	Reference T23 WB:T20F7.3	T20F7.3 (Caenorhabditis elegans)
+N62	Reference T23 ENS:DARP00000070007	LOC100333120 (Danio rerio)
+N63	Reference T23 ENS:SSCP00000003250	ITPKC (Sus scrofa)
+N64	Reference T23 AT:1G61575.1	AT1G61575 (Arabidopsis thaliana)
+N65	Reference T23 FB:pp0111486	IP3K2 (Drosophila melanogaster)
+N66	Reference T23 ENS:DARP00000062899	LOC564528 (Danio rerio)
+N67	Reference T23 ENS:DARP00000089188	pak2a (Danio rerio)
+N68	Reference T23 ENS:GALP00000013993	ITPKA (Gallus gallus)
+N69	Reference T23 ENS:BTAP00000002194	ITPKA (Bos taurus)
+N70	Reference T23 ENS:DARP00000119462	itpkca (Danio rerio)
+N71	Reference T23 ENS:GALP00000009131	IP6K2 (Gallus gallus)
+N72	Reference T23 ENS:BTAP00000025930	ITPKC (Bos taurus)
+N73	Reference T23 WB:ZK795.1	CELE_ZK795.1 (Caenorhabditis elegans)
+N74	Reference T23 FB:pp0302815	dnk (Drosophila melanogaster)
+N75	Reference T23 ENS:DARP00000048865	ipmkb (Danio rerio)
+N76	Reference T23 ENS:GALP00000003950	IP6K1 (Gallus gallus)
+N77	Reference T23 ENS:GALP00000014741	ITPKB (Gallus gallus)
+N78	Reference T23 ENS:SSCP00000012143	IP6K1 (Sus scrofa)
+N79	Reference T23 ENS:BTAP00000014872	IPMK (Bos taurus)
+N80	Reference T23 ENS:BTAP00000025755	ITPKB (Bos taurus)
+N81	Reference T23 ENS:BTAP00000030616	IP6K2 (Bos taurus)
+N82	Reference T23 ENS:BTAP00000044915	LOC786383 (Bos taurus)
+N83	Reference T23 WB:Y22D7AR.6.1	Y22D7AR.6 (Caenorhabditis elegans)
+N84	Reference T23 ENS:DARP00000011601	ip6k2 (Danio rerio)
+N85	Reference T23 ENS:DARP00000024046	IP6K2 (2 of 2) (Danio rerio)
+N86	Reference T23 ENS:GALP00000004267	IPMK (Gallus gallus)
+N87	Reference T23 FB:pp0073589	CG15745 (Drosophila melanogaster)
+N88	Reference T23 FB:pp0077734	Ipk2 (Drosophila melanogaster)
+N89	Reference T23 FB:pp0079465	IP3K1 (Drosophila melanogaster)
+N90	Reference T23 ENS:DARP00000100833	ip6k1 (Danio rerio)
+N91	Reference T23 ENS:BTAP00000015405	IP6K1 (Bos taurus)
+T24	Gene 1403 1406	CK2
+N92	Reference T24 FB:pp0085590	CkIIbeta2 (Drosophila melanogaster)
+N93	Reference T24 ENS:RNOP00000001123	Csnk2b (Rattus norvegicus)
+N94	Reference T24 FB:pp0089135	CkIIbeta (Drosophila melanogaster)
+N95	Reference T24 ENS:MUSP00000055919	Csnk2a2 (Mus musculus)
+N96	Reference T24 FB:pp0110433	CkIIalpha (Drosophila melanogaster)
+T25	Chemical 1456 1463	Y-27632
+N97	Reference T25 CID:00448042	DB08756
+N98	Reference T25 CID:00005711	CHEMBL1994526
+T26	Chemical 1468 1480	okadaic acid
+N99	Reference T26 CID:00446512	CHEBI:44658
+T27	Chemical 1501 1509	dichloro
+N100	Reference T27 CID:00156425	(dichloromethyl)dioxidanyl
+T28	Chemical 1521 1547	ribofuranosylbenzimidazole
+N101	Reference T28 CID:24898154	SCHEMBL1319620
+T29	Gene 1584 1589	actin
+N102	Reference T29 SP:BC32H8.12c.1	act1p (Schizosaccharomyces pombe)
+N103	Reference T29 FB:pp0078131	Act79B (Drosophila melanogaster)
+N104	Reference T29 ENS:GALP00000039176	ACTG1 (Gallus gallus)
+N105	Reference T29 FB:pp0100124	Act5C (Drosophila melanogaster)
+N106	Reference T29 FB:pp0071448	Act57B (Drosophila melanogaster)
+N107	Reference T29 FB:pp0082597	Act88F (Drosophila melanogaster)
+N108	Reference T29 SGD:YFL039C	ACT1p (Saccharomyces cerevisiae)
+N109	Reference T29 FB:pp0082253	Act87E (Drosophila melanogaster)
+N110	Reference T29 FB:pp0085365	Act42A (Drosophila melanogaster)
+N111	Reference T29 AT:3G46520.1	ACT12 (Arabidopsis thaliana)
+N112	Reference T29 FB:pp0081153	alphaTub84B (Drosophila melanogaster)
+N113	Reference T29 ENS:GALP00000015657	ACTB (Gallus gallus)
+N114	Reference T29 WB:T25C8.2.1	act-5 (Caenorhabditis elegans)
+N115	Reference T29 ENS:DARP00000058628	acta1b (Danio rerio)
+T30	Gene 1624 1630	NMM-II
+N116	Reference T30 FB:pp0072306	zip (Drosophila melanogaster)
+T31	Gene 1653 1656	LIS
+N117	Reference T31 AT:2G41500.1	LIS (Arabidopsis thaliana)
+N118	Reference T31 AT:1G61120.1	TPS04 (Arabidopsis thaliana)
+T32	Gene 1677 1682	actin
+N119	Reference T32 SP:BC32H8.12c.1	act1p (Schizosaccharomyces pombe)
+N120	Reference T32 FB:pp0078131	Act79B (Drosophila melanogaster)
+N121	Reference T32 ENS:GALP00000039176	ACTG1 (Gallus gallus)
+N122	Reference T32 FB:pp0100124	Act5C (Drosophila melanogaster)
+N123	Reference T32 FB:pp0071448	Act57B (Drosophila melanogaster)
+N124	Reference T32 FB:pp0082597	Act88F (Drosophila melanogaster)
+N125	Reference T32 SGD:YFL039C	ACT1p (Saccharomyces cerevisiae)
+N126	Reference T32 FB:pp0082253	Act87E (Drosophila melanogaster)
+N127	Reference T32 FB:pp0085365	Act42A (Drosophila melanogaster)
+N128	Reference T32 AT:3G46520.1	ACT12 (Arabidopsis thaliana)
+N129	Reference T32 FB:pp0081153	alphaTub84B (Drosophila melanogaster)
+N130	Reference T32 ENS:GALP00000015657	ACTB (Gallus gallus)
+N131	Reference T32 WB:T25C8.2.1	act-5 (Caenorhabditis elegans)
+N132	Reference T32 ENS:DARP00000058628	acta1b (Danio rerio)
+T33	Gene 1718 1724	NMM-II
+N133	Reference T33 FB:pp0072306	zip (Drosophila melanogaster)
+T34	Gene 1740 1743	CK2
+N134	Reference T34 FB:pp0085590	CkIIbeta2 (Drosophila melanogaster)
+N135	Reference T34 ENS:RNOP00000001123	Csnk2b (Rattus norvegicus)
+N136	Reference T34 FB:pp0089135	CkIIbeta (Drosophila melanogaster)
+N137	Reference T34 ENS:MUSP00000055919	Csnk2a2 (Mus musculus)
+N138	Reference T34 FB:pp0110433	CkIIalpha (Drosophila melanogaster)
+T35	Chemical 1813 1820	Y-27632
+N139	Reference T35 CID:00448042	DB08756
+N140	Reference T35 CID:00005711	CHEMBL1994526
+T36	Chemical 1822 1834	okadaic acid
+N141	Reference T36 CID:00446512	CHEBI:44658
+T37	Gene 1882 1888	NMM-II
+N142	Reference T37 FB:pp0072306	zip (Drosophila melanogaster)
+T38	Gene 1982 1985	CK2
+N143	Reference T38 FB:pp0085590	CkIIbeta2 (Drosophila melanogaster)
+N144	Reference T38 ENS:RNOP00000001123	Csnk2b (Rattus norvegicus)
+N145	Reference T38 FB:pp0089135	CkIIbeta (Drosophila melanogaster)
+N146	Reference T38 ENS:MUSP00000055919	Csnk2a2 (Mus musculus)
+N147	Reference T38 FB:pp0110433	CkIIalpha (Drosophila melanogaster)
+T39	Gene 2008 2026	myosin heavy chain
+N148	Reference T39 FB:pp0072306	zip (Drosophila melanogaster)
+T40	Gene 2114 2120	NMM-II
+N149	Reference T40 FB:pp0072306	zip (Drosophila melanogaster)
+T41	Gene 2155 2160	actin
+N150	Reference T41 SP:BC32H8.12c.1	act1p (Schizosaccharomyces pombe)
+N151	Reference T41 FB:pp0078131	Act79B (Drosophila melanogaster)
+N152	Reference T41 ENS:GALP00000039176	ACTG1 (Gallus gallus)
+N153	Reference T41 FB:pp0100124	Act5C (Drosophila melanogaster)
+N154	Reference T41 FB:pp0071448	Act57B (Drosophila melanogaster)
+N155	Reference T41 FB:pp0082597	Act88F (Drosophila melanogaster)
+N156	Reference T41 SGD:YFL039C	ACT1p (Saccharomyces cerevisiae)
+N157	Reference T41 FB:pp0082253	Act87E (Drosophila melanogaster)
+N158	Reference T41 FB:pp0085365	Act42A (Drosophila melanogaster)
+N159	Reference T41 AT:3G46520.1	ACT12 (Arabidopsis thaliana)
+N160	Reference T41 FB:pp0081153	alphaTub84B (Drosophila melanogaster)
+N161	Reference T41 ENS:GALP00000015657	ACTB (Gallus gallus)
+N162	Reference T41 WB:T25C8.2.1	act-5 (Caenorhabditis elegans)
+N163	Reference T41 ENS:DARP00000058628	acta1b (Danio rerio)
+T42	Gene 2216 2219	LIS
+N164	Reference T42 AT:2G41500.1	LIS (Arabidopsis thaliana)
+N165	Reference T42 AT:1G61120.1	TPS04 (Arabidopsis thaliana)

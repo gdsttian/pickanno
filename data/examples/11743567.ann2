@@ -1,0 +1,22 @@
+T1	Disease 51 59	ischemic
+N1	Reference T1 MESH:D007511	ischemic
+T2	Disease 242 250	ischemic
+N2	Reference T2 MESH:D007511	ischemic
+T3	Disease 505 513	ischemic
+N3	Reference T3 MESH:D007511	ischemic
+T4	Organism 551 558	rabbits
+N4	Reference T4 NCBITaxon:9986	rabbits
+T5	Disease 593 601	ischemic
+N5	Reference T5 MESH:D007511	ischemic
+T6	Disease 1099 1107	ischemic
+N6	Reference T6 MESH:D007511	ischemic
+T7	Disease 2286 2294	ischemic
+N7	Reference T7 MESH:D007511	ischemic
+T8	Disease 2411 2419	ischemic
+N8	Reference T8 MESH:D007511	ischemic
+T9	Disease 2500 2524	impaired muscle function
+N9	Reference T9 MESH:D009135	impaired muscle function
+T10	Disease 2654 2662	ischemia
+N10	Reference T10 MESH:D007511	ischemia
+T11	Disease 2723 2731	ischemic
+N11	Reference T11 MESH:D007511	ischemic

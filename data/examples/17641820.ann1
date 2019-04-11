@@ -1,0 +1,26 @@
+T1	Organism 3 23	Arabidopsis thaliana
+N1	Reference T1 NCBITaxon:3702	Arabidopsis thaliana
+T2	Organism 139 159	Arabidopsis thaliana
+N2	Reference T2 NCBITaxon:3702	Arabidopsis thaliana
+T3	Gene 178 183	twist
+N3	Reference T3 ENS:RNOP00000014763	Twist1 (Rattus norvegicus)
+N4	Reference T3 ENS:P00000242261	TWIST1 (Homo sapiens)
+N5	Reference T3 ENS:MUSP00000040089	Twist1 (Mus musculus)
+N6	Reference T3 FB:pp0071864	twi (Drosophila melanogaster)
+N7	Reference T3 ENS:SSCP00000016298	TWIST1 (Sus scrofa)
+N8	Reference T3 ENS:GALP00000043186	TWIST1 (Gallus gallus)
+T4	Organism 268 279	A. thaliana
+N9	Reference T4 NCBITaxon:3702	Arabidopsis thaliana
+T5	Gene 307 312	twist
+N10	Reference T5 ENS:RNOP00000014763	Twist1 (Rattus norvegicus)
+N11	Reference T5 ENS:P00000242261	TWIST1 (Homo sapiens)
+N12	Reference T5 ENS:MUSP00000040089	Twist1 (Mus musculus)
+N13	Reference T5 FB:pp0071864	twi (Drosophila melanogaster)
+N14	Reference T5 ENS:SSCP00000016298	TWIST1 (Sus scrofa)
+N15	Reference T5 ENS:GALP00000043186	TWIST1 (Gallus gallus)
+T6	Gene 586 600	alpha-tubulin6
+N16	Reference T6 ENS:MUSP00000051033	Tuba1c (Mus musculus)
+N17	Reference T6 ENS:RNOP00000020932	LOC100909441 (Rattus norvegicus)
+N18	Reference T6 ENS:P00000301072	TUBA1C (Homo sapiens)
+T7	Chemical 682 689	polymer
+N19	Reference T7 CID:03032581	45554_FLUKA

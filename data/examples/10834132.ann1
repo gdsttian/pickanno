@@ -1,0 +1,4 @@
+T1	Chemical 1190 1201	cholesterol
+N1	Reference T1 CID:00005997	C00187
+T2	Chemical 1275 1290	HDL cholesterol
+N2	Reference T2 CID:00005997	C00187

@@ -1,0 +1,39 @@
+T1	Chemical 0 9	Clonidine
+N1	Reference T1 MESH:D003000	Clonidine
+T2	Organism 43 49	rabbit
+N2	Reference T2 NCBITaxon:9986	rabbit
+T3	Chemical 117 131	norepinephrine
+N3	Reference T3 MESH:D009638	norepinephrine
+T4	Chemical 172 185	isoproterenol
+N4	Reference T4 MESH:D007545	isoproterenol
+T5	Disease 243 278	proximal convoluted tubule segments
+N5	Reference T5 MESH:C537775	proximal convoluted tubule segments
+T6	Disease 280 283	PCT
+N6	Reference T6 MESH:C537775	PCT
+T7	Disease 302 305	PCT
+N7	Reference T7 MESH:C537775	PCT
+T8	Chemical 345 356	propranolol
+N8	Reference T8 MESH:D011433	propranolol
+T9	Disease 593 596	PCT
+N9	Reference T9 MESH:C537775	PCT
+T10	Chemical 725 734	clonidine
+N10	Reference T10 MESH:D003000	clonidine
+T11	Chemical 841 852	methoxamine
+N11	Reference T11 MESH:D008729	methoxamine
+T12	Chemical 905 921	isoproterenol JV
+T13	Chemical 1010 1019	clonidine
+N12	Reference T13 MESH:D003000	clonidine
+T14	Disease 1058 1061	PCT
+N13	Reference T14 MESH:C537775	PCT
+T15	Chemical 1104 1113	yohimbine
+N14	Reference T15 MESH:D015016	yohimbine
+T16	Chemical 1210 1223	isoproterenol
+N15	Reference T16 MESH:D007545	isoproterenol
+T17	Chemical 1257 1270	isoproterenol
+N16	Reference T17 MESH:D007545	isoproterenol
+T18	Chemical 1288 1297	clonidine
+N17	Reference T18 MESH:D003000	clonidine
+T19	Chemical 1305 1314	clonidine
+N18	Reference T19 MESH:D003000	clonidine
+T20	Disease 1330 1333	PCT
+N19	Reference T20 MESH:C537775	PCT

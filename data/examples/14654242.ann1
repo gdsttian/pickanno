@@ -1,0 +1,54 @@
+T1	Organism 101 106	human
+N1	Reference T1 NCBITaxon:9606	Homo sapiens
+T2	Gene 116 123	CORS-26
+N2	Reference T2 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N3	Reference T2 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T3	Gene 167 173	26-kDa
+N4	Reference T3 ENS:MUSP00000031334	Eif2b1 (Mus musculus)
+T4	Organism 188 194	murine
+N5	Reference T4 NCBITaxon:10090	Mus musculus
+T5	Gene 204 211	CORS-26
+N6	Reference T5 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N7	Reference T5 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T6	Organism 226 231	mouse
+N8	Reference T6 NCBITaxon:10090	Mus musculus
+T7	Organism 401 406	human
+N9	Reference T7 NCBITaxon:9606	Homo sapiens
+T8	Gene 407 414	CORS-26
+N10	Reference T8 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N11	Reference T8 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T9	Organism 736 741	human
+N12	Reference T9 NCBITaxon:9606	Homo sapiens
+T10	Organism 796 801	human
+N13	Reference T10 NCBITaxon:9606	Homo sapiens
+T11	Gene 802 809	CORS-26
+N14	Reference T11 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N15	Reference T11 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T12	Organism 818 823	colon
+N16	Reference T12 NCBITaxon:1542223	Colon
+T13	Gene 898 905	CORS-26
+N17	Reference T13 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N18	Reference T13 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T14	Organism 998 1003	human
+N19	Reference T14 NCBITaxon:9606	Homo sapiens
+T15	Gene 1004 1011	CORS-26
+N20	Reference T15 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N21	Reference T15 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T16	Organism 1031 1036	human
+N22	Reference T16 NCBITaxon:9606	Homo sapiens
+T17	Organism 1100 1106	humans
+N23	Reference T17 NCBITaxon:9606	Homo sapiens
+T18	Organism 1227 1232	human
+N24	Reference T18 NCBITaxon:9606	Homo sapiens
+T19	Gene 1285 1292	CORS-26
+N25	Reference T19 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N26	Reference T19 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T20	Disease 1336 1351	chondroblastoma
+N27	Reference T20 DOID:2649	chondroblastoma
+T21	Disease 1356 1372	giant cell tumor
+N28	Reference T21 DOID:200	giant cell tumor
+T22	Gene 1438 1445	CORS-26
+N29	Reference T22 ENS:MUSP00000106152	C1qtnf3 (Mus musculus)
+N30	Reference T22 ENS:P00000371497	C1QTNF3 (Homo sapiens)
+T23	Disease 1546 1562	skeletal disease
+N31	Reference T23 DOID:0080001	bone disease

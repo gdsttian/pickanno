@@ -1,0 +1,40 @@
+T1	Chemical 24 35	ticlopidine
+N1	Reference T1 MESH:D013988	ticlopidine
+T2	Organism 76 84	patients
+N2	Reference T2 NCBITaxon:9606	patients
+T3	Disease 94 115	myocardial infarction
+N3	Reference T3 MESH:D009203	myocardial infarction
+T4	Disease 152 173	myocardial infarction
+N4	Reference T4 MESH:D009203	myocardial infarction
+T5	Chemical 175 178	OMI
+T6	Chemical 216 227	ticlopidine
+N5	Reference T6 MESH:D013988	ticlopidine
+T7	Chemical 554 568	thromboxane B2
+N6	Reference T7 MESH:D013929	thromboxane B2
+T8	Chemical 581 591	6-keto-PGF
+T9	Chemical 737 740	ADP
+N7	Reference T9 MESH:D000244	ADP
+T10	Chemical 742 751	adrenalin
+N8	Reference T10 CHEBI:28918	adrenalin
+T11	Chemical 808 818	6-keto-PGF
+T12	Chemical 878 881	OMI
+T13	Chemical 1029 1040	ticlopidine
+N9	Reference T13 MESH:D013988	ticlopidine
+T14	Disease 1152 1160	bleeding
+N10	Reference T14 MESH:D006470	bleeding
+T15	Chemical 1330 1333	ADP
+N11	Reference T15 MESH:D000244	ADP
+T16	Disease 1342 1362	platelet aggregation
+N12	Reference T16 MESH:D001791	platelet aggregation
+T17	Chemical 1384 1395	ticlopidine
+N13	Reference T17 MESH:D013988	ticlopidine
+T18	Chemical 1477 1480	OMI
+T19	Chemical 1575 1586	ticlopidine
+N14	Reference T19 MESH:D013988	ticlopidine
+T20	Chemical 1687 1690	OMI
+T21	Chemical 1703 1714	ticlopidine
+N15	Reference T21 MESH:D013988	ticlopidine
+T22	Chemical 1766 1776	6-keto-PGF
+T23	Chemical 1819 1822	OMI
+T24	Chemical 1898 1909	ticlopidine
+N16	Reference T24 MESH:D013988	ticlopidine

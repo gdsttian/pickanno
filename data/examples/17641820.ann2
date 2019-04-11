@@ -1,0 +1,6 @@
+T1	Organism 3 23	Arabidopsis thaliana
+N1	Reference T1 NCBITaxon:3702	Arabidopsis thaliana
+T2	Organism 139 159	Arabidopsis thaliana
+N2	Reference T2 NCBITaxon:3702	Arabidopsis thaliana
+T3	Chemical 576 579	Cys
+N3	Reference T3 CHEBI:17561	Cys

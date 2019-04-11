@@ -1,0 +1,68 @@
+T1	Gene 419 449	basic fibroblast growth factor
+N1	Reference T1 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N2	Reference T1 ENS:P00000264498	FGF2 (Homo sapiens)
+N3	Reference T1 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N4	Reference T1 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N5	Reference T1 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T2	Gene 451 455	bFGF
+N6	Reference T2 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N7	Reference T2 ENS:P00000264498	FGF2 (Homo sapiens)
+N8	Reference T2 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N9	Reference T2 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N10	Reference T2 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T3	Organism 551 558	rabbits
+N11	Reference T3 NCBITaxon:9986	Oryctolagus cuniculus
+T4	Gene 685 689	bFGF
+N12	Reference T4 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N13	Reference T4 ENS:P00000264498	FGF2 (Homo sapiens)
+N14	Reference T4 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N15	Reference T4 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N16	Reference T4 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T5	Gene 790 794	bFGF
+N17	Reference T5 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N18	Reference T5 ENS:P00000264498	FGF2 (Homo sapiens)
+N19	Reference T5 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N20	Reference T5 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N21	Reference T5 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T6	Gene 978 982	bFGF
+N22	Reference T6 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N23	Reference T6 ENS:P00000264498	FGF2 (Homo sapiens)
+N24	Reference T6 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N25	Reference T6 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N26	Reference T6 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T7	Gene 1035 1039	bFGF
+N27	Reference T7 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N28	Reference T7 ENS:P00000264498	FGF2 (Homo sapiens)
+N29	Reference T7 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N30	Reference T7 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N31	Reference T7 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T8	Gene 1217 1221	bFGF
+N32	Reference T8 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N33	Reference T8 ENS:P00000264498	FGF2 (Homo sapiens)
+N34	Reference T8 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N35	Reference T8 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N36	Reference T8 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T9	Gene 1762 1773	alpha-actin
+N37	Reference T9 ENS:GALP00000010239	ACTA2 (Gallus gallus)
+T10	Gene 1862 1866	bFGF
+N38	Reference T10 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N39	Reference T10 ENS:P00000264498	FGF2 (Homo sapiens)
+N40	Reference T10 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N41	Reference T10 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N42	Reference T10 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T11	Gene 2095 2101	5 vs 0
+N43	Reference T11 ENS:P00000265421	POLB (Homo sapiens)
+T12	Gene 2187 2191	bFGF
+N44	Reference T12 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N45	Reference T12 ENS:P00000264498	FGF2 (Homo sapiens)
+N46	Reference T12 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N47	Reference T12 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N48	Reference T12 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T13	Gene 2347 2351	bFGF
+N49	Reference T13 ENS:MUSP00000037694	Fgf2 (Mus musculus)
+N50	Reference T13 ENS:P00000264498	FGF2 (Homo sapiens)
+N51	Reference T13 ENS:BTAP00000007477	FGF2 (Bos taurus)
+N52	Reference T13 ENS:RNOP00000023388	Fgf2 (Rattus norvegicus)
+N53	Reference T13 ENS:GALP00000031519	FGF2 (Gallus gallus)
+T14	Disease 2654 2662	ischemia
+N54	Reference T14 DOID:326	ischemia

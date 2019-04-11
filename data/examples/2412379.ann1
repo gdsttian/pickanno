@@ -1,0 +1,111 @@
+T1	Chemical 8 16	naloxone
+N1	Reference T1 CID:05284596	DB01183
+T2	Gene 54 67	alpha subunit
+N2	Reference T2 FB:pp0080148	Q27607 (Drosophila melanogaster)
+N3	Reference T2 ENS:GALP00000010852	LOC395381 (Gallus gallus)
+N4	Reference T2 FB:pp0085051	PH4alphaMP (Drosophila melanogaster)
+T3	Organism 103 106	rat
+N5	Reference T3 NCBITaxon:10116	Rattus norvegicus
+T4	Chemical 197 205	naloxone
+N6	Reference T4 CID:05284596	DB01183
+T5	Gene 240 243	TSH
+N7	Reference T5 FB:pp0085261	tsh (Drosophila melanogaster)
+N8	Reference T5 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T6	Gene 246 259	alpha subunit
+N9	Reference T6 FB:pp0080148	Q27607 (Drosophila melanogaster)
+N10	Reference T6 ENS:GALP00000010852	LOC395381 (Gallus gallus)
+N11	Reference T6 FB:pp0085051	PH4alphaMP (Drosophila melanogaster)
+T7	Gene 261 274	alpha subunit
+N12	Reference T7 FB:pp0080148	Q27607 (Drosophila melanogaster)
+N13	Reference T7 ENS:GALP00000010852	LOC395381 (Gallus gallus)
+N14	Reference T7 FB:pp0085051	PH4alphaMP (Drosophila melanogaster)
+T8	Gene 299 307	TSH-beta
+N15	Reference T8 ENS:SSCP00000007199	TSH-BETA (Sus scrofa)
+N16	Reference T8 ENS:P00000256592	TSHB (Homo sapiens)
+T9	Organism 314 317	rat
+N17	Reference T9 NCBITaxon:10116	Rattus norvegicus
+T10	Chemical 364 372	Naloxone
+N18	Reference T10 CID:05284596	DB01183
+T11	Gene 374 377	NAL
+N19	Reference T11 FB:pp0303283	Adf1 (Drosophila melanogaster)
+N20	Reference T11 ENS:P00000258317	NPL (Homo sapiens)
+T12	Gene 416 419	TSH
+N21	Reference T12 FB:pp0085261	tsh (Drosophila melanogaster)
+N22	Reference T12 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T13	Gene 421 434	alpha subunit
+N23	Reference T13 FB:pp0080148	Q27607 (Drosophila melanogaster)
+N24	Reference T13 ENS:GALP00000010852	LOC395381 (Gallus gallus)
+N25	Reference T13 FB:pp0085051	PH4alphaMP (Drosophila melanogaster)
+T14	Gene 439 447	TSH-beta
+N26	Reference T14 ENS:SSCP00000007199	TSH-BETA (Sus scrofa)
+N27	Reference T14 ENS:P00000256592	TSHB (Homo sapiens)
+T15	Gene 474 477	NAL
+N28	Reference T15 FB:pp0303283	Adf1 (Drosophila melanogaster)
+N29	Reference T15 ENS:P00000258317	NPL (Homo sapiens)
+T16	Organism 497 502	human
+N30	Reference T16 NCBITaxon:9606	Homo sapiens
+T17	Gene 503 517	beta-endorphin
+N31	Reference T17 ENS:MUSP00000020990	Pomc (Mus musculus)
+N32	Reference T17 ENS:P00000384092	POMC (Homo sapiens)
+N33	Reference T17 ENS:DARP00000063332	pomca (Danio rerio)
+T18	Gene 519 525	beta h
+N34	Reference T18 FB:pp0289294	kst (Drosophila melanogaster)
+T19	Chemical 567 587	triiodothyronine (T3
+N35	Reference T19 CID:54110874	SCHEMBL1896718
+N36	Reference T19 CID:22808555	AG-J-60086
+N37	Reference T19 CID:00005920	3,3',5-Triiodo-L-thyronine
+T20	Gene 622 625	NAL
+N38	Reference T20 FB:pp0303283	Adf1 (Drosophila melanogaster)
+N39	Reference T20 ENS:P00000258317	NPL (Homo sapiens)
+T21	Gene 650 653	TSH
+N40	Reference T21 FB:pp0085261	tsh (Drosophila melanogaster)
+N41	Reference T21 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T22	Chemical 672 702	Thyrotrophin releasing hormone
+N42	Reference T22 CID:00638678	A-38579
+T23	Chemical 704 707	TRH
+N43	Reference T23 CID:00638678	A-38579
+T24	Gene 737 740	TSH
+N44	Reference T24 FB:pp0085261	tsh (Drosophila melanogaster)
+N45	Reference T24 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T25	Gene 787 790	NAL
+N46	Reference T25 FB:pp0303283	Adf1 (Drosophila melanogaster)
+N47	Reference T25 ENS:P00000258317	NPL (Homo sapiens)
+T26	Gene 817 823	beta h
+N48	Reference T26 FB:pp0289294	kst (Drosophila melanogaster)
+T27	Chemical 829 850	methionine-enkephalin
+N49	Reference T27 CID:00443363	C11684
+T28	Chemical 852 859	Met-Enk
+N50	Reference T28 CID:00443363	C11684
+T29	Gene 867 871	ala2
+N51	Reference T29 AT:5G44240.1	ALA2 (Arabidopsis thaliana)
+T30	Chemical 872 891	met-enkephalinamide
+N52	Reference T30 CID:00123704	CHEMBL247368
+T31	Chemical 893 897	DALA
+N53	Reference T31 CID:00071080	C00133
+N54	Reference T31 CID:00000137	5-aminolevulinic acid
+T32	Gene 929 932	TSH
+N55	Reference T32 FB:pp0085261	tsh (Drosophila melanogaster)
+N56	Reference T32 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T33	Gene 990 993	TSH
+N57	Reference T33 FB:pp0085261	tsh (Drosophila melanogaster)
+N58	Reference T33 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T34	Gene 1033 1039	beta h
+N59	Reference T34 FB:pp0289294	kst (Drosophila melanogaster)
+T35	Gene 1112 1118	beta h
+N60	Reference T35 FB:pp0289294	kst (Drosophila melanogaster)
+T36	Chemical 1124 1131	Met-Enk
+N61	Reference T36 CID:00443363	C11684
+T37	Chemical 1136 1140	DALA
+N62	Reference T37 CID:00071080	C00133
+N63	Reference T37 CID:00000137	5-aminolevulinic acid
+T38	Gene 1144 1147	TSH
+N64	Reference T38 FB:pp0085261	tsh (Drosophila melanogaster)
+N65	Reference T38 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T39	Gene 1175 1178	TSH
+N66	Reference T39 FB:pp0085261	tsh (Drosophila melanogaster)
+N67	Reference T39 FB:pp0082933	Lgr1 (Drosophila melanogaster)
+T40	Gene 1199 1202	NAL
+N68	Reference T40 FB:pp0303283	Adf1 (Drosophila melanogaster)
+N69	Reference T40 ENS:P00000258317	NPL (Homo sapiens)
+T41	Gene 1236 1242	beta h
+N70	Reference T41 FB:pp0289294	kst (Drosophila melanogaster)

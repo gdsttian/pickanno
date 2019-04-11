@@ -1,0 +1,22 @@
+T1	Organism 636 639	men
+N1	Reference T1 NCBITaxon:9606	men
+T2	Organism 649 654	women
+N2	Reference T2 NCBITaxon:9606	women
+T3	Organism 798 801	men
+N3	Reference T3 NCBITaxon:9606	men
+T4	Organism 810 815	women
+N4	Reference T4 NCBITaxon:9606	women
+T5	Chemical 1190 1201	cholesterol
+N5	Reference T5 MESH:D002784	cholesterol
+T6	Chemical 1279 1290	cholesterol
+N6	Reference T6 MESH:D002784	cholesterol
+T7	Organism 1366 1369	men
+N7	Reference T7 NCBITaxon:9606	men
+T8	Organism 1433 1438	women
+N8	Reference T8 NCBITaxon:9606	women
+T9	Organism 1851 1856	women
+N9	Reference T9 NCBITaxon:9606	women
+T10	Disease 2500 2516	chronic diseases
+N10	Reference T10 MESH:D002908	chronic diseases
+T11	Disease 2523 2546	cardiovascular diseases
+N11	Reference T11 MESH:D002318	cardiovascular diseases

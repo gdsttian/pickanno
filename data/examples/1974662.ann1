@@ -1,0 +1,71 @@
+T1	Chemical 0 9	Clonidine
+N1	Reference T1 CID:00002803	Chlofazoline
+T2	Organism 43 49	rabbit
+N2	Reference T2 NCBITaxon:9986	Oryctolagus cuniculus
+T3	Gene 59 69	convoluted
+N3	Reference T3 FB:pp0086669	conv (Drosophila melanogaster)
+T4	Chemical 117 131	norepinephrine
+N4	Reference T4 CID:00439260	DB00368
+T5	Chemical 172 185	isoproterenol
+N5	Reference T5 CID:00003779	Aerolone
+T6	Gene 252 262	convoluted
+N6	Reference T6 FB:pp0086669	conv (Drosophila melanogaster)
+T7	Chemical 345 356	propranolol
+N7	Reference T7 CID:00004946	Angilol
+T8	Gene 479 492	adrenoceptors
+N8	Reference T8 ENS:P00000358301	ADRB1 (Homo sapiens)
+N9	Reference T8 ENS:P00000306662	ADRA1B (Homo sapiens)
+N10	Reference T8 ENS:P00000343782	ADRB3 (Homo sapiens)
+N11	Reference T8 ENS:P00000368766	ADRA1D (Homo sapiens)
+N12	Reference T8 ENS:P00000386069	ADRA2C (Homo sapiens)
+N13	Reference T8 ENS:P00000280155	ADRA2A (Homo sapiens)
+N14	Reference T8 ENS:P00000305372	ADRB2 (Homo sapiens)
+N15	Reference T8 ENS:P00000369960	ADRA1A (Homo sapiens)
+N16	Reference T8 ENS:P00000480573	ADRA2B (Homo sapiens)
+T9	Chemical 725 734	clonidine
+N17	Reference T9 CID:00002803	Chlofazoline
+T10	Chemical 841 852	methoxamine
+N18	Reference T10 CID:00006081	DB00723
+T11	Chemical 905 918	isoproterenol
+N19	Reference T11 CID:00003779	Aerolone
+T12	Chemical 1010 1019	clonidine
+N20	Reference T12 CID:00002803	Chlofazoline
+T13	Chemical 1104 1113	yohimbine
+N21	Reference T13 CID:00006169	Actibine
+T14	Disease 1134 1143	pertussis
+N22	Reference T14 DOID:1116	pertussis
+T15	Chemical 1210 1223	isoproterenol
+N23	Reference T15 CID:00003779	Aerolone
+T16	Chemical 1257 1270	isoproterenol
+N24	Reference T16 CID:00003779	Aerolone
+T17	Chemical 1288 1297	clonidine
+N25	Reference T17 CID:00002803	Chlofazoline
+T18	Chemical 1305 1314	clonidine
+N26	Reference T18 CID:00002803	Chlofazoline
+T19	Disease 1392 1401	pertussis
+N27	Reference T19 DOID:1116	pertussis
+T20	Gene 1420 1439	GTP-binding protein
+N28	Reference T20 WB:F17C8.4.1	F17C8.4 (Caenorhabditis elegans)
+N29	Reference T20 ENS:GALP00000026544	RHOB (Gallus gallus)
+N30	Reference T20 AT:1G75010.1	ARC3 (Arabidopsis thaliana)
+N31	Reference T20 ENS:DARP00000044985	rnd1 (Danio rerio)
+N32	Reference T20 AT:5G39960.1	AT5G39960 (Arabidopsis thaliana)
+N33	Reference T20 WB:C44C11.1a	C44C11.1a (Caenorhabditis elegans)
+N34	Reference T20 ENS:P00000354040	GTPBP4 (Homo sapiens)
+N35	Reference T20 ENS:MUSP00000104825	Ifi47 (Mus musculus)
+N36	Reference T20 FB:pp0073336	Gtp-bp (Drosophila melanogaster)
+N37	Reference T20 ENS:GALP00000033584	RHOA (Gallus gallus)
+N38	Reference T20 AT:5G65960.1	AT5G65960 (Arabidopsis thaliana)
+T21	Gene 1472 1488	adenylyl cyclase
+N39	Reference T21 SP:BC19C7.03.1	cyr1 (Schizosaccharomyces pombe)
+N40	Reference T21 SGD:YJL005W	CYR1 (Saccharomyces cerevisiae)
+N41	Reference T21 FB:pp0293288	Ac76E (Drosophila melanogaster)
+N42	Reference T21 AT:4G15640.1	AT4G15640 (Arabidopsis thaliana)
+N43	Reference T21 FB:pp0079995	ACXB (Drosophila melanogaster)
+N44	Reference T21 FB:pp0304773	Ac13E (Drosophila melanogaster)
+N45	Reference T21 WB:C44F1.5	acy-3 (Caenorhabditis elegans)
+N46	Reference T21 FB:pp0079996	ACXA (Drosophila melanogaster)
+N47	Reference T21 WB:F17C8.1	acy-1 (Caenorhabditis elegans)
+N48	Reference T21 WB:T01C2.1	acy-4 (Caenorhabditis elegans)
+N49	Reference T21 AT:3G21465.1	AT3G21465 (Arabidopsis thaliana)
+N50	Reference T21 WB:C10F3.3	acy-2 (Caenorhabditis elegans)

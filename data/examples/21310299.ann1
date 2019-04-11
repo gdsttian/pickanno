@@ -1,0 +1,32 @@
+T1	Chemical 48 59	fatty acids
+N1	Reference T1 CID:00000283	DB01942
+T2	Disease 97 112	prostate cancer
+N2	Reference T2 DOID:10283	prostate cancer
+T3	Chemical 173 184	fatty acids
+N3	Reference T3 CID:00000283	DB01942
+T4	Disease 388 403	prostate cancer
+N4	Reference T4 DOID:10283	prostate cancer
+T5	Disease 463 470	disease
+N5	Reference T5 DOID:4	disease
+T6	Disease 581 596	prostate cancer
+N6	Reference T6 DOID:10283	prostate cancer
+T7	Disease 652 667	prostate cancer
+N7	Reference T7 DOID:10283	prostate cancer
+T8	Chemical 983 994	fatty acids
+N8	Reference T8 CID:00000283	DB01942
+T9	Disease 1000 1015	prostate cancer
+N9	Reference T9 DOID:10283	prostate cancer
+T10	Disease 1114 1129	prostate cancer
+N10	Reference T10 DOID:10283	prostate cancer
+T11	Disease 1302 1317	prostate cancer
+N11	Reference T11 DOID:10283	prostate cancer
+T12	Chemical 1415 1426	fatty acids
+N12	Reference T12 CID:00000283	DB01942
+T13	Disease 1450 1465	prostate cancer
+N13	Reference T13 DOID:10283	prostate cancer
+T14	Chemical 1598 1609	fatty acids
+N14	Reference T14 CID:00000283	DB01942
+T15	Disease 1643 1658	prostate cancer
+N15	Reference T15 DOID:10283	prostate cancer
+T16	Disease 1720 1735	prostate cancer
+N16	Reference T16 DOID:10283	prostate cancer

@@ -1,0 +1,54 @@
+T1	Chemical 32 59	polyunsaturated fatty acids
+N1	Reference T1 MESH:D005231	polyunsaturated fatty acids
+T2	Disease 97 112	prostate cancer
+N2	Reference T2 MESH:D011471	prostate cancer
+T3	Chemical 157 184	polyunsaturated fatty acids
+N3	Reference T3 MESH:D005231	polyunsaturated fatty acids
+T4	Chemical 186 190	PUFA
+N4	Reference T4 CHEBI:26208	PUFA
+T5	Chemical 209 213	PUFA
+N5	Reference T5 CHEBI:26208	PUFA
+T6	Disease 222 236	prostate tumor
+N6	Reference T6 MESH:D011471	prostate tumor
+T7	Chemical 379 383	PUFA
+N7	Reference T7 CHEBI:26208	PUFA
+T8	Disease 388 403	prostate cancer
+N8	Reference T8 MESH:D011471	prostate cancer
+T9	Disease 471 485	aggressiveness
+N9	Reference T9 MESH:D001523	aggressiveness
+T10	Chemical 535 539	PUFA
+N10	Reference T10 CHEBI:26208	PUFA
+T11	Disease 574 596	higher prostate cancer
+N11	Reference T11 MESH:D011471	higher prostate cancer
+T12	Disease 652 667	prostate cancer
+N12	Reference T12 MESH:D011471	prostate cancer
+T13	Chemical 940 944	PUFA
+N13	Reference T13 CHEBI:26208	PUFA
+T14	Chemical 983 994	fatty acids
+N14	Reference T14 MESH:D005227	fatty acids
+T15	Disease 1000 1015	prostate cancer
+N15	Reference T15 MESH:D011471	prostate cancer
+T16	Chemical 1097 1101	PUFA
+N16	Reference T16 CHEBI:26208	PUFA
+T17	Disease 1114 1129	prostate cancer
+N17	Reference T17 MESH:D011471	prostate cancer
+T18	Disease 1302 1317	prostate cancer
+N18	Reference T18 MESH:D011471	prostate cancer
+T19	Chemical 1415 1426	fatty acids
+N19	Reference T19 MESH:D005227	fatty acids
+T20	Disease 1443 1465	higher prostate cancer
+N20	Reference T20 MESH:D011471	higher prostate cancer
+T21	Organism 1483 1486	men
+N21	Reference T21 NCBITaxon:9606	men
+T22	Organism 1520 1523	men
+N22	Reference T22 NCBITaxon:9606	men
+T23	Chemical 1598 1609	fatty acids
+N23	Reference T23 MESH:D005227	fatty acids
+T24	Disease 1635 1658	overall prostate cancer
+N24	Reference T24 MESH:D011471	overall prostate cancer
+T25	Organism 1671 1674	men
+N25	Reference T25 NCBITaxon:9606	men
+T26	Disease 1720 1735	prostate cancer
+N26	Reference T26 MESH:D011471	prostate cancer
+T27	Organism 1746 1749	men
+N27	Reference T27 NCBITaxon:9606	men

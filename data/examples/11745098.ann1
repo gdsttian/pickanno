@@ -1,0 +1,29 @@
+T1	Organism 103 106	rat
+N1	Reference T1 NCBITaxon:10116	Rattus norvegicus
+T2	Organism 207 210	rat
+N2	Reference T2 NCBITaxon:10116	Rattus norvegicus
+T3	Gene 805 816	cathepsin K
+N3	Reference T3 ENS:GALP00000043433	CTSK (Gallus gallus)
+N4	Reference T3 ENS:SSCP00000007089	CTSS (Sus scrofa)
+N5	Reference T3 ENS:RNOP00000028730	Ctsk (Rattus norvegicus)
+N6	Reference T3 FB:pp0086091	CG4847 (Drosophila melanogaster)
+N7	Reference T3 ENS:P00000271651	CTSK (Homo sapiens)
+N8	Reference T3 ENS:BTAP00000028016	CTSK (Bos taurus)
+N9	Reference T3 ENS:MUSP00000015664	Ctsk (Mus musculus)
+N10	Reference T3 FB:pp0075508	26-29-p (Drosophila melanogaster)
+N11	Reference T3 ENS:DARP00000007535	ctsk (Danio rerio)
+N12	Reference T3 ENS:SSCP00000007088	CTSK (Sus scrofa)
+T4	Gene 918 920	Ca
+N13	Reference T4 FB:pp0084850	ca (Drosophila melanogaster)
+N14	Reference T4 FB:pp0304830	Aats-asn (Drosophila melanogaster)
+N15	Reference T4 ENS:MUSP00000032907	Calca (Mus musculus)
+N16	Reference T4 FB:pp0084900	ncd (Drosophila melanogaster)
+N17	Reference T4 ENS:MUSP00000023710	Krt71 (Mus musculus)
+N18	Reference T4 ENS:MUSP00000005606	Prkaca (Mus musculus)
+T5	Gene 940 942	Ca
+N19	Reference T5 FB:pp0084850	ca (Drosophila melanogaster)
+N20	Reference T5 FB:pp0304830	Aats-asn (Drosophila melanogaster)
+N21	Reference T5 ENS:MUSP00000032907	Calca (Mus musculus)
+N22	Reference T5 FB:pp0084900	ncd (Drosophila melanogaster)
+N23	Reference T5 ENS:MUSP00000023710	Krt71 (Mus musculus)
+N24	Reference T5 ENS:MUSP00000005606	Prkaca (Mus musculus)

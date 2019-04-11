@@ -1,0 +1,56 @@
+T1	Chemical 24 35	ticlopidine
+N1	Reference T1 CID:00005472	DB00208
+T2	Disease 94 115	myocardial infarction
+N2	Reference T2 DOID:5844	myocardial infarction
+T3	Disease 152 173	myocardial infarction
+N3	Reference T3 DOID:5844	myocardial infarction
+T4	Chemical 216 227	ticlopidine
+N4	Reference T4 CID:00005472	DB00208
+T5	Chemical 554 568	thromboxane B2
+N5	Reference T5 CID:05283137	CHEBI:28728
+T6	Chemical 570 574	TXB2
+N6	Reference T6 CID:05280890	C05963
+T7	Chemical 581 599	6-keto-PGF 1 alpha
+N7	Reference T7 CID:05280888	6-Keto-PGF1a
+T8	Gene 737 740	ADP
+N8	Reference T8 FB:pp0085923	adp (Drosophila melanogaster)
+N9	Reference T8 FB:pp0077059	CG14613 (Drosophila melanogaster)
+N10	Reference T8 ENS:P00000317971	WDTC1 (Homo sapiens)
+N11	Reference T8 ENS:MUSP00000040647	Wdtc1 (Mus musculus)
+N12	Reference T8 ENS:MUSP00000137608	Mdga2 (Mus musculus)
+N13	Reference T8 ENS:RNOP00000064062	LOC100909594 (Rattus norvegicus)
+N14	Reference T8 ENS:GALP00000001390	WDTC1 (Gallus gallus)
+T9	Chemical 742 751	adrenalin
+N15	Reference T9 CID:00005815	Anapen
+T10	Gene 757 765	collagen
+N16	Reference T10 FB:pp0078641	Cg25C (Drosophila melanogaster)
+T11	Chemical 799 803	TXB2
+N17	Reference T11 CID:05280890	C05963
+T12	Chemical 808 826	6-keto-PGF 1 alpha
+N18	Reference T12 CID:05280888	6-Keto-PGF1a
+T13	Chemical 1029 1040	ticlopidine
+N19	Reference T13 CID:00005472	DB00208
+T14	Gene 1330 1333	ADP
+N20	Reference T14 FB:pp0085923	adp (Drosophila melanogaster)
+N21	Reference T14 FB:pp0077059	CG14613 (Drosophila melanogaster)
+N22	Reference T14 ENS:P00000317971	WDTC1 (Homo sapiens)
+N23	Reference T14 ENS:MUSP00000040647	Wdtc1 (Mus musculus)
+N24	Reference T14 ENS:MUSP00000137608	Mdga2 (Mus musculus)
+N25	Reference T14 ENS:RNOP00000064062	LOC100909594 (Rattus norvegicus)
+N26	Reference T14 ENS:GALP00000001390	WDTC1 (Gallus gallus)
+T15	Chemical 1384 1395	ticlopidine
+N27	Reference T15 CID:00005472	DB00208
+T16	Chemical 1441 1445	TXB2
+N28	Reference T16 CID:05280890	C05963
+T17	Chemical 1575 1586	ticlopidine
+N29	Reference T17 CID:00005472	DB00208
+T18	Chemical 1668 1672	TXB2
+N30	Reference T18 CID:05280890	C05963
+T19	Chemical 1703 1714	ticlopidine
+N31	Reference T19 CID:00005472	DB00208
+T20	Chemical 1766 1784	6-keto-PGF 1 alpha
+N32	Reference T20 CID:05280888	6-Keto-PGF1a
+T21	Chemical 1898 1909	ticlopidine
+N33	Reference T21 CID:00005472	DB00208
+T22	Gene 1921 1929	ABSTRACT
+N34	Reference T22 FB:pp0078606	abs (Drosophila melanogaster)

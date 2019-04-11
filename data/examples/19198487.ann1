@@ -1,0 +1,13 @@
+T1	Chemical 45 52	mixture
+N1	Reference T1 CID:46780009	(Mixture)
+T2	Chemical 61 67	Yttria
+N2	Reference T2 CID:00159374	Diyttrium trioxide
+T3	Chemical 79 87	Zirconia
+N3	Reference T3 CID:00062395	204994_ALDRICH
+T4	Chemical 169 176	mixture
+N4	Reference T4 CID:46780009	(Mixture)
+T5	Chemical 391 403	zinc acetate
+N5	Reference T5 CID:00011192	CHEBI:62984
+N6	Reference T5 CID:00000175	DB03166
+T6	Chemical 407 415	methanol
+N7	Reference T6 CID:00000887	C00132
