@@ -97,7 +97,6 @@ class FilesystemData(object):
     def safe_write_file(fn, text):
         """Atomic write using os.rename()."""
         fd, tmpfn = mkstemp()
-        app.logger.error('Saving to {}'.format(tmpfn))
         with open(fd, 'wt') as f:
             f.write(text)
             # https://stackoverflow.com/a/2333979
