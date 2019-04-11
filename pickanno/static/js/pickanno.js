@@ -92,7 +92,9 @@ document.addEventListener('keydown', function(event) {
 	    if (allCandidatesLabeled) {
 		nextLink.click();
 	    } else {
-		; // only enable hotkey when candidates have been labeled
+		if (confirm("Are you sure you want to leave\nthis document without a judgment?")) {
+		    nextLink.click();
+		}
 	    }
 	}
 	event.preventDefault();
