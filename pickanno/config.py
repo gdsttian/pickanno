@@ -17,4 +17,5 @@ HOTKEYS = {
     'ArrowDown': PICK_LAST,   # pick last candidate
     'ArrowRight': PICK_ALL,   # accept all candidates
     'ArrowLeft': PICK_NONE,   # reject all candidates
+    'x': CLEAR_PICKS,         # clear accept/reject
 }

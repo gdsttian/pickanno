@@ -4,7 +4,7 @@ from flask import current_app as app
 
 from .db import get_db
 from .visualize import visualize_candidates, visualize_annotation_sets
-from .protocol import PICK_FIRST, PICK_LAST, PICK_ALL, PICK_NONE
+from .protocol import PICK_FIRST, PICK_LAST, PICK_ALL, PICK_NONE, CLEAR_PICKS
 
 bp = Blueprint('view', __name__, static_folder='static', url_prefix='/pickanno')
 
@@ -97,6 +97,8 @@ def pick_annotation(collection, document):
         accepted, rejected = [keys[-1]], keys[:-1]
     elif choice == PICK_ALL:
         accepted, rejected = keys, []
+    elif choice == CLEAR_PICKS:
+        accepted = rejected = [], []
     elif choice in keys:
         accepted, rejected = [choice], [k for k in keys if k != choice]
     else:
