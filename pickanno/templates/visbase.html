@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/visualization.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/'+config['FONT_FILE']) }}">
+    <style type="text/css">
+      .page-content {
+          font-family: 'Open Sans', sans-serif;
+          font-size: {{ config['FONT_SIZE'] }}px;
+      }
+      .visualization {
+          width: {{ config['LINE_WIDTH'] }}px;
+      }
+    </style>
+{% endblock %}
+
+
+{% block content %}{% endblock %}

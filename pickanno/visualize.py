@@ -20,13 +20,9 @@ except ImportError:
 
 def visualize_annotation_sets(document_data):
     """Generate visualization of several annotation sets for the same text."""
-    text = document_data['txt']
-    data = document_data['json']
-    annsets = { k: v for k, v in document_data.items() if k.startswith('ann') }
-
-    # TODO use embeddable and don't just do the first
-    annset = list(annsets.values())[0]
-    return standoff_to_html(text, annset)
+    text = document_data.text
+    annsets = document_data.annsets
+    return [standoff_to_html(text, a) for a in annsets.values()]
 
 
 def visualize_candidates(document_data):

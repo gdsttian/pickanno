@@ -55,7 +55,7 @@ def show_all_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_annotation_sets(document_data)
-    return content    # TODO use template
+    return render_template('visualization.html', content=content)
 
 
 @bp.route('/collection/<collection>/<document>')
@@ -63,7 +63,7 @@ def show_alternative_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_candidates(document_data)
-    return render_template('visualization.html', collection=collection,
+    return render_template('pickanno.html', collection=collection,
                            document=document, content=content,
                            metadata=document_data.metadata)
 
