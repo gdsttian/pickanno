@@ -21,7 +21,7 @@ def show_collections():
     return render_template('collections.html', collections=collections)
 
 
-@bp.route('/collection/<collection>')
+@bp.route('/collection/<collection>/')
 def show_collection(collection):
     db = get_db()
     documents = db.get_documents(collection)
@@ -55,7 +55,8 @@ def show_all_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_annotation_sets(document_data)
-    return render_template('visualization.html', content=content)
+    return render_template('visualization.html', collection=collection,
+                           document=document, content=content)
 
 
 @bp.route('/collection/<collection>/<document>')

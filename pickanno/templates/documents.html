@@ -1,20 +1,17 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<h2>Documents</h2>
-
+{% block navigation %}
 <ul class="collection-listing">
   <li><i class="far fa-folder-open"></i>
-    <a href="{{ url_for('view.show_collections') }}">[root]</a></li>
-  <ul class="collection-listing">
-    <li><i class="far fa-folder-open"></i>
-      <a href="{{ url_for('view.show_collection', collection=collection) }}">{{ collection }}</a></li>
-    <ul class="document-listing">
+    <a href="{{ url_for('view.show_collections') }}">[root]</a> /
+    <i class="far fa-folder-open"></i>
+    <a href="{{ url_for('view.show_collection', collection=collection) }}">{{ collection }}</a>
+  </li>
+  <ul class="document-listing">
 {% for d in documents %}
-      <li><i class="far fa-file"></i>
-        <a href="{{ url_for('view.show_alternative_annotations', collection=collection, document=d) }}">{{ d }}</a></li>
+    <li><i class="far fa-file"></i>
+      <a href="{{ url_for('view.show_alternative_annotations', collection=collection, document=d) }}">{{ d }}</a></li>
 {% endfor %}
-    </ul>
   </ul>
 </ul>
 {% endblock %}

@@ -5,15 +5,22 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/visualization.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fonts/'+config['FONT_FILE']) }}">
     <style type="text/css">
-      .page-content {
-          font-family: 'Open Sans', sans-serif;
-          font-size: {{ config['FONT_SIZE'] }}px;
-      }
       .visualization {
           width: {{ config['LINE_WIDTH'] }}px;
       }
     </style>
 {% endblock %}
 
+{% block navigation %}
+<ul class="collection-listing">
+  <li><i class="far fa-folder-open"></i>
+    <a href="{{ url_for('view.show_collections') }}">[root]</a> /
+    <i class="far fa-folder-open"></i>
+    <a href="{{ url_for('view.show_collection', collection=collection) }}">{{ collection }}</a> /
+    <i class="far fa-file-alt"></i>
+    <a href="{{ url_for('view.show_alternative_annotations', collection=collection, document=document) }}">{{ document }}</a>
+  </li>
+</ul>
+{% endblock %}
 
 {% block content %}{% endblock %}
