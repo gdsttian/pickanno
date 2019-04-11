@@ -35,6 +35,7 @@
 }
 
 .pa-candidate.rejected {
+    display: none;
     opacity: 0.25;
     border: 1px solid red;
 }
