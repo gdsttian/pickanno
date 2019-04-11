@@ -15,6 +15,14 @@
     flex-direction: column;
 }
 
+.pa-mid-left {
+    margin-right: 0.25em;    /* space width */
+}
+
+.pa-mid-right {
+    margin-left: 0.25em;    /* space width */
+}
+
 .pa-candidate {
     border: 1px dashed lightgray;
     padding: 1px;

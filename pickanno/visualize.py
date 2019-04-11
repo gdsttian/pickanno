@@ -25,6 +25,21 @@ def visualize_annotation_sets(document_data):
     return [(k, standoff_to_html(text, a)) for k, a in annsets.items()]
 
 
+def _find_covering_span(text, annsets, word_boundary=True):
+    """Find text span covering giving annotation sets, optionally
+    extending it to word boundaries."""
+    flattened = [a for anns in annsets.values() for a in anns]
+    start = min(a.start for a in flattened)
+    end = max(a.end for a in flattened)
+    if word_boundary and text[start].isalnum():
+        while start > 0 and text[start-1].isalnum():
+            start -= 1
+    if word_boundary and text[end-1].isalnum():
+        while end < len(text) and text[end].isalnum():
+            end += 1
+    return start, end
+
+
 def visualize_candidates(document_data):
     """Generate visualization of alternative annotation candidates."""
     text = document_data.text
@@ -37,12 +52,8 @@ def visualize_candidates(document_data):
     candidate = _get_candidate(annsets, candidate_set, candidate_id)
     annsets = _filter_to_overlapping(annsets, candidate)
 
-    # Identify span covered by filtered annotations; this will be centered
-    # in the visualization
-    flattened = [a for anns in annsets.values() for a in anns]
-    span_start = min(a.start for a in flattened)
-    span_end = max(a.end for a in flattened)
-    # TODO: consider extending span to word boundaries
+    # Identify span to center in the visualization
+    span_start, span_end = _find_covering_span(text, annsets)
 
     # Split text to segments around centered span
     above, left, span, right, below = _split_text(text, span_start, span_end)
@@ -84,7 +95,8 @@ def _split_text(text, start, end, line_width=None):
     same line.
     """
     if line_width is None:
-        line_width = conf.get_line_width()
+        nontext_space = 10    # TODO figure out how much margins etc. take
+        line_width = conf.get_line_width() - nontext_space
 
     span_text = text[start:end]
     span_width = _text_width(span_text)
