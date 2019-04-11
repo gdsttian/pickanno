@@ -50,13 +50,10 @@ def visualize_candidates(document_data):
     """Generate visualization of alternative annotation candidates."""
     text = document_data.text
     data = document_data.metadata
-    candidate_set = data['candidate_set']
-    candidate_id = data['candidate_id']
-    annsets = document_data.annsets
 
-    # Find focused candidate and filter all annotation sets to overlapping
-    candidate = _get_candidate(annsets, candidate_set, candidate_id)
-    annsets = _filter_to_overlapping(annsets, candidate)
+    # Filter all annotation sets to overlapping (note: destructive)
+    document_data.filter_to_candidate()
+    annsets = document_data.annsets
 
     # Identify span to center in the visualization
     span_start, span_end = _find_covering_span(text, annsets)
@@ -183,24 +180,3 @@ def _text_width(text, point_size=None, font_file=None):
     total_points = total * point_size / units_per_em
     return total_points
 _text_width.cache = {}
-
-
-def _get_candidate(annsets, candidate_set, candidate_id):
-    """Return identified candidate annotation."""
-    # Find candidate annotation 
-    candidates = [t for t in annsets[candidate_set] if t.id == candidate_id]
-    if not candidates:
-        raise ValueError('missing {} in {}'.format(candidate_id, candidate_set))
-    if len(candidates) > 1:
-        raise ValueError('several {} in {}'.format(candidate_id, candidate_set))
-    return candidates[0]
-
-
-def _filter_to_overlapping(annsets, candidate):
-    """Filter annsets to annotations overlapping candidate."""
-    filtered = { k: [] for k in annsets }
-    for key, annset in annsets.items():
-        for a in annset:
-            if a.overlaps(candidate):
-                filtered[key].append(a)
-    return filtered

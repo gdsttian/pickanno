@@ -78,9 +78,11 @@ def show_all_annotations(collection, document):
 def show_alternative_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
+    # Filter to avoid irrelevant types in legend
+    document_data.filter_to_candidate()
     metadata = document_data.metadata
     content = visualize_candidates(document_data)
-    # legend = visualize_legend(document_data)
+    legend = visualize_legend(document_data)
     prev_url, next_url = _prev_and_next_url(
         request.endpoint, collection, document)
     return render_template('pickanno.html', **locals())

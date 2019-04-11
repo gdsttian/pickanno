@@ -1,4 +1,16 @@
+/* wraps visualization(s) and legend */
+.visualization-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
 .visualization {
+    display: block;
+}
+
+.visualization.column {
     display: flex;
     flex-direction: column;
 }
@@ -61,8 +73,9 @@
 }
 
 .legend {
-    float:right;
-    margin: 20px;
+    /* float:right; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
     border: 1px solid gray;
     font-size: 90%;
     background-color: #eee;
@@ -74,7 +87,6 @@
     -moz-box-shadow: 0 5px 10px    rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     line-height: normal;
-    font-family: sans-serif;
 }
 
 .legend span {
@@ -99,6 +111,8 @@
 }
 
 .ann {
+    border-width: 1px;
+    border-style: solid;
     border-color: gray;
     background-color: lightgray;
     border-radius:         3px;

@@ -1,7 +1,12 @@
 {% extends 'visbase.html' %}
 
 
-{% block content %}
+{% block legend %}
+{{ legend|safe }}
+{% endblock %}
+
+
+{% block visualizations %}
 <script>
 const PICK_ANNO_URL = "{{ url_for('view.pick_annotation', collection=collection, document=document) }}";
 
@@ -14,9 +19,7 @@ const METADATA = {{ metadata|tojson(indent=4) }};
 window.onload = load;
 </script>
 
-{{ legend|safe }}
-
-<div class="visualization">
+<div class="visualization column">
   <div class="pa-above">{{ content.above|safe }}</div>
   <div class="pa-mid-row">
     <div class="pa-mid-left">{{ content.left|safe }}</div>

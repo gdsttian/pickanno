@@ -11,12 +11,42 @@ from pickanno import conf
 from .standoff import parse_standoff
 
 
-# TODO this doesn't need to be a class
 class DocumentData(object):
+    """Text with alternative annotation sets and designated candidate
+    annotation."""
     def __init__(self, text, annsets, metadata):
         self.text = text
         self.annsets = annsets
         self.metadata = metadata
+        self.candidate = self.get_annotation(self.candidate_annset,
+                                             self.candidate_id)
+
+    def filter_to_candidate(self):
+        """Filter annsets to annotations overlapping candidate."""
+        filtered = { k: [] for k in self.annsets }
+        for key, annset in self.annsets.items():
+            for a in annset:
+                if a.overlaps(self.candidate):
+                    filtered[key].append(a)
+        self.annsets = filtered
+
+    @property
+    def candidate_annset(self):
+        return self.annsets[self.metadata['candidate_set']]
+
+    @property
+    def candidate_id(self):
+        return self.metadata['candidate_id']
+
+    @staticmethod
+    def get_annotation(annset, id_):
+        """Return identified annotation."""
+        matching = [t for t in annset if t.id == id_]
+        if not matching:
+            raise KeyError('annotation {} not found'.format(id_))
+        if len(matching) > 1:
+            raise ValueError('duplicate annoation id {}'.format(id_))
+        return matching[0]
 
 
 class FilesystemData(object):
@@ -31,8 +61,8 @@ class FilesystemData(object):
                 subdirs.append(name)
         return subdirs
 
-    def get_documents(self, collection):
-        documents = []
+    def get_documents(self, collection, include_data=False):
+        documents, data_by_root = [], {}
         collection_dir = os.path.join(self.root_dir, collection)
         for name in sorted(os.listdir(collection_dir)):
             path = os.path.join(collection_dir, name)
@@ -40,7 +70,13 @@ class FilesystemData(object):
                 root, ext = os.path.splitext(name)
                 if ext == '.txt':
                     documents.append(root)
-        return documents
+                elif ext == '.json' and include_data:
+                    info_by_root[root] = self.get_document_metadata(
+                        collection, root)
+        if not include_data:
+            return documents
+        else:
+            return [(d, info_by_root.get(d, {})) for d in documents]
 
     def get_neighbouring_documents(self, collection, document):
         documents = self.get_documents(collection)
@@ -61,13 +97,13 @@ class FilesystemData(object):
         if not parse:
             return data
         else:
-            return parse_standoff(data)        
+            return parse_standoff(data)
 
     def get_document_metadata(self, collection, document):
         path = os.path.join(self.root_dir, collection, document+'.json')
         with open(path, encoding='utf-8') as f:
             return json.load(f)
-    
+
     def get_document_data(self, collection, document):
         root_path = os.path.join(self.root_dir, collection, document)
         glob_path = root_path + '.*'
@@ -79,7 +115,7 @@ class FilesystemData(object):
             ext = ext[1:]
             extensions.add(ext)
         app.logger.info('Found {} for {}'.format(extensions, glob_path))
-        
+
         for ext in ('txt', 'ann1', 'ann2', 'json'):
             if ext not in extensions:
                 raise KeyError('missing {}.{}'.format(root_path, ext))

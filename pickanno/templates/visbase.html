@@ -50,4 +50,14 @@
 </div>
 {% endblock %}
 
-{% block content %}{% endblock %}
+
+{% block content %}
+<div class="visualization-wrapper">
+  <div class="visualizations">
+    {% block visualizations %}{% endblock %}
+  </div>
+  <div class="legend-wrapper">
+    {% block legend %}{% endblock %}
+  </div>
+</div>
+{% endblock %}
