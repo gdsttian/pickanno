@@ -1,6 +1,0 @@
-{
-    "candidate_set": "ann1",
-    "candidate_id": "T1",
-    "accepted": ["ann1"],
-    "rejected": ["ann2"]
-}
