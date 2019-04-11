@@ -22,7 +22,7 @@ def visualize_annotation_sets(document_data):
     """Generate visualization of several annotation sets for the same text."""
     text = document_data.text
     annsets = document_data.annsets
-    return [standoff_to_html(text, a) for a in annsets.values()]
+    return [(k, standoff_to_html(text, a)) for k, a in annsets.items()]
 
 
 def visualize_candidates(document_data):

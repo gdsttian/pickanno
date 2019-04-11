@@ -2,9 +2,10 @@
 
 
 {% block content %}
-{% for c in content %}
+{% for k, v in content %}
+<h2>{{ k }}</h2>
 <div class="visualization">
-{{ c|safe }}
+{{ v|safe }}
 </div>
 {% endfor %}
 {% endblock %}
