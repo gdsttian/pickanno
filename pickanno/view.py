@@ -4,6 +4,7 @@ from flask import current_app as app
 
 from .db import get_db
 from .visualize import visualize_candidates, visualize_annotation_sets
+from .visualize import visualize_legend
 from .protocol import PICK_FIRST, PICK_LAST, PICK_ALL, PICK_NONE, CLEAR_PICKS
 
 bp = Blueprint('view', __name__, static_folder='static', url_prefix='/pickanno')
@@ -67,6 +68,7 @@ def show_all_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_annotation_sets(document_data)
+    legend = visualize_legend(document_data)
     prev_url, next_url = _prev_and_next_url(
         request.endpoint, collection, document)
     return render_template('annsets.html', **locals())
@@ -78,6 +80,7 @@ def show_alternative_annotations(collection, document):
     document_data = db.get_document_data(collection, document)
     metadata = document_data.metadata
     content = visualize_candidates(document_data)
+    # legend = visualize_legend(document_data)
     prev_url, next_url = _prev_and_next_url(
         request.endpoint, collection, document)
     return render_template('pickanno.html', **locals())

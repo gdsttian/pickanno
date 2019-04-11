@@ -7,7 +7,7 @@ from itertools import chain
 from flask import current_app as app
 
 from pickanno import conf
-from .so2html import standoff_to_html
+from .so2html import standoff_to_html, generate_legend
 
 
 try:
@@ -16,6 +16,12 @@ except ImportError:
     print('Failed `import fontTools`, try `pip3 install fonttools`',
           file=sys.stderr)
     raise
+
+
+def visualize_legend(document_data):
+    types = sorted(set(
+        a.type for annset in document_data.annsets.values() for a in annset))
+    return generate_legend(types, include_style=True)
 
 
 def visualize_annotation_sets(document_data):
@@ -120,7 +126,7 @@ def _split_text(text, start, end, line_width=None):
     left_text, right_text = '', ''
     left_width, right_width = 0, 0
     while True:
-        if left_width <= right_width and left_tokens:
+        if left_tokens and (left_width <= right_width or not right_tokens):
             new_text = left_tokens[-1] + left_text
             new_width = _text_width(new_text)
             if new_width + span_width + right_width < line_width:

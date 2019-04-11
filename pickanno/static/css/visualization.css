@@ -174,9 +174,30 @@
     line-height: 64px;
 }
 
+/* Preset colors. */
 .ann-tSpan {
     background-color: #FFB300;
     border-color: #b27d00;
+}
+
+.ann-tChemical {
+  background-color: #9fdfff;
+  border-color: #6f9cb2;
+}
+
+.ann-tDisease {
+  background-color: #ff8888;
+  border-color: #b25f5f;
+}
+
+.ann-tGene {
+  background-color: #7fa2ff;
+  border-color: #5871b2;
+}
+
+.ann-tOrganism {
+  background-color: #ffccaa;
+  border-color: #b28e76;
 }
 
 /* This is a hack to correct for hint.css making blocks too high. */

@@ -2,6 +2,7 @@
 
 
 {% block content %}
+{{ legend|safe }}
 {% for k, v in content %}
 <h2>{{ k }}</h2>
 <div class="visualization">

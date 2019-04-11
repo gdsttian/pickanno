@@ -342,8 +342,21 @@ def uniq(s):
     return [i for i in s if i not in seen and not seen.add(i)]
 
 
-def generate_legend(types, colors):
-    parts = ['''<div class="legend">Legend<table>''']
+def generate_legend(types, colors=None, include_style=False):
+    parts = []
+    if colors is None:
+        colors = span_colors(types)
+    if include_style:
+        parts.append("<style>\n")
+        color_map = dict(zip(types, colors))
+        for t, c in color_map.items():
+            parts.append(""".ann-t%s {
+  background-color: %s;
+  border-color: %s;
+}
+""" % (html_safe_string(t), c, darker_color(c)))
+        parts.append("</style>\n")
+    parts.append('''<div class="legend">Legend<table>''')
     for f, c in zip(types, colors):
         t = html_safe_string(f)
         tagl, tagr = '<%s class="ann ann-t%s">' % (TAG, t), '</%s>' % TAG
@@ -645,13 +658,14 @@ type_color_map = {
     'Pathological_formation':  '#aaaaaa',
     'Cancer':  '#999999',
     'Gene': '#7fa2ff',
-    'Chemical': '#8fcfff',
+    'Chemical': '#9fdfff',
     'Species': '#ffccaa',
-    'Disease': '#aaaaaa',
+    'Organism': '#ffccaa',
+    'Disease': '#ff8888',
     'ggp': '#7fa2ff',
     'che': '#8fcfff',
     'dis': '#ff9999',
-    'org': '#ffccaa',
+    'org': '#ffddbb',
 }
 
 

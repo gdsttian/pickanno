@@ -14,6 +14,8 @@ const METADATA = {{ metadata|tojson(indent=4) }};
 window.onload = load;
 </script>
 
+{{ legend|safe }}
+
 <div class="visualization">
   <div class="pa-above">{{ content.above|safe }}</div>
   <div class="pa-mid-row">
