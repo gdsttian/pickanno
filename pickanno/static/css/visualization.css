@@ -36,8 +36,9 @@
 
 .pa-candidate.rejected {
     opacity: 0.25;
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     /* border: 1px solid red; */
+    text-decoration: underline wavy red;
 }
 
 .pa-candidate.accepted {
