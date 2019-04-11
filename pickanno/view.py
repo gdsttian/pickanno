@@ -1,5 +1,5 @@
 from flask import Blueprint
-from flask import request, render_template, jsonify
+from flask import request, url_for, render_template, jsonify
 from flask import current_app as app
 
 from .db import get_db
@@ -50,23 +50,37 @@ def show_metadata(collection, document):
     return jsonify(db.get_document_metadata(collection, document))
 
 
+def _prev_and_next_url(endpoint, collection, document):
+    # navigation helper
+    db = get_db()
+    prev_doc, next_doc = db.get_neighbouring_documents(collection, document)
+    prev_url, next_url = (
+        url_for(endpoint, collection=collection, document=d) if d is not None
+        else None
+        for d in (prev_doc, next_doc)
+    )
+    return prev_url, next_url
+
+
 @bp.route('/<collection>/<document>.all')
 def show_all_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_annotation_sets(document_data)
-    return render_template('annsets.html', collection=collection,
-                           document=document, content=content)
+    prev_url, next_url = _prev_and_next_url(
+        request.endpoint, collection, document)
+    return render_template('annsets.html', **locals())
 
 
 @bp.route('/<collection>/<document>')
 def show_alternative_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
+    metadata = document_data.metadata
     content = visualize_candidates(document_data)
-    return render_template('pickanno.html', collection=collection,
-                           document=document, content=content,
-                           metadata=document_data.metadata)
+    prev_url, next_url = _prev_and_next_url(
+        request.endpoint, collection, document)
+    return render_template('pickanno.html', **locals())
 
 
 @bp.route('/<collection>/<document>/pick')

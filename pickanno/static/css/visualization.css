@@ -21,6 +21,9 @@
     margin-top: 1px;
     margin-bottom: 1px;
     cursor: pointer;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 
 .pa-candidate.rejected {

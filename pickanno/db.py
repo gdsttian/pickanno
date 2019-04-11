@@ -42,6 +42,13 @@ class FilesystemData(object):
                     documents.append(root)
         return documents
 
+    def get_neighbouring_documents(self, collection, document):
+        documents = self.get_documents(collection)
+        doc_idx = documents.index(document)
+        prev_doc = None if doc_idx == 0 else documents[doc_idx-1]
+        next_doc = None if doc_idx == len(documents)-1 else documents[doc_idx+1]
+        return prev_doc, next_doc
+
     def get_document_text(self, collection, document):
         path = os.path.join(self.root_dir, collection, document+'.txt')
         with open(path, encoding='utf-8') as f:

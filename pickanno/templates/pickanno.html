@@ -1,0 +1,28 @@
+{% extends 'visbase.html' %}
+
+
+{% block content %}
+<script>
+const PICK_ANNO_URL = "{{ url_for('view.pick_annotation', collection=collection, document=document) }}";
+
+const HOTKEYS = {{ config['HOTKEYS']|tojson(indent=4) }};
+
+const METADATA = {{ metadata|tojson(indent=4) }};
+</script>
+<script src="{{ url_for('static', filename='js/pickanno.js') }}"></script>
+<script>
+window.onload = load;
+</script>
+
+<div class="visualization">
+  <div class="pa-above">{{ content.above|safe }}</div>
+  <div class="pa-mid-row">
+    <div class="pa-mid-left">{{ content.left|safe }}</div>
+    <div class="pa-mid-centre">{% for k, s in content.spans.items() %}
+      <div id="candidate-{{ k }}" class="pa-candidate">{{ s|safe }}</div>{% endfor %}
+    </div>
+    <div class="pa-mid-right">{{ content.right|safe }}</div>
+  </div>
+  <div class="pa-below">{{ content.below|safe }}</div>
+</div>
+{% endblock %}

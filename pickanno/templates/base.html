@@ -17,7 +17,7 @@
   <body>
     <header class="page-header">
       <div class="header-row">
-        <div><a href="{{ url_for('view.root') }}">Home</a></div>
+        <div><a id="homelink" href="{{ url_for('view.root') }}">Pickanno</a></div>
 	<div id="spinner"><i class="fas fa-cog fa-spin"></i></div>
       </div>      
     </header>
@@ -25,6 +25,9 @@
 {% block navigation %}{% endblock %}
 <hr/>
 {% block content %}{% endblock %}
+<hr/>
     </div>
+    <footer class="page-footer">
+    </footer>
   </body>
 </html>

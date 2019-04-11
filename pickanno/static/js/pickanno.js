@@ -11,10 +11,13 @@ function updateSpinner() {
     }
 }
 
+var allCandidatesLabeled = false;
+
 function updatePicks() {
     var candidates = document.getElementsByClassName("pa-candidate");
-    var accepted = METADATA['accepted'];
-    var rejected = METADATA['rejected'];
+    var accepted = METADATA['accepted'] || [];
+    var rejected = METADATA['rejected'] || [];
+    allCandidatesLabeled = true;
     for (let i=0; i<candidates.length; i++) {
 	let element = candidates[i];
 	let cid = element.id.replace("candidate-", "");
@@ -27,6 +30,7 @@ function updatePicks() {
 	} else {
 	    element.classList.remove("rejected");
 	    element.classList.remove("accepted");
+	    allCandidatesLabeled = false;
 	}
     }
 }
@@ -78,6 +82,21 @@ document.addEventListener('keydown', function(event) {
     if (event.key in HOTKEYS) {
 	let pick = HOTKEYS[event.key];
 	pickCandidate(pick);
+	event.preventDefault();
+	event.stopPropagation();
+    }
+    // TODO make configurable
+    if (event.key == 'Enter') {
+	let nextLink = document.getElementById("nav-next-link");
+	if (nextLink) {
+	    if (allCandidatesLabeled) {
+		nextLink.click();
+	    } else {
+		; // only enable hotkey when candidates have been labeled
+	    }
+	}
+	event.preventDefault();
+	event.stopPropagation();
     }
 });
 
