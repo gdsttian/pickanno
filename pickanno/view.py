@@ -21,7 +21,7 @@ def show_collections():
     return render_template('collections.html', collections=collections)
 
 
-@bp.route('/collection/<collection>/')
+@bp.route('/<collection>/')
 def show_collection(collection):
     db = get_db()
     documents = db.get_documents(collection)
@@ -32,34 +32,34 @@ def show_collection(collection):
     )
 
 
-@bp.route('/collection/<collection>/<document>.txt')
+@bp.route('/<collection>/<document>.txt')
 def show_text(collection, document):
     db = get_db()
     return db.get_document_text(collection, document)
 
 
-@bp.route('/collection/<collection>/<document>.ann<idx>')
+@bp.route('/<collection>/<document>.ann<idx>')
 def show_annotation_set(collection, document, idx):
     db = get_db()
     return db.get_document_annotation(collection, document, 'ann'+idx)
 
 
-@bp.route('/collection/<collection>/<document>.json')
+@bp.route('/<collection>/<document>.json')
 def show_metadata(collection, document):
     db = get_db()
     return jsonify(db.get_document_metadata(collection, document))
 
 
-@bp.route('/collection/<collection>/<document>.all')
+@bp.route('/<collection>/<document>.all')
 def show_all_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
     content = visualize_annotation_sets(document_data)
-    return render_template('visualization.html', collection=collection,
+    return render_template('annsets.html', collection=collection,
                            document=document, content=content)
 
 
-@bp.route('/collection/<collection>/<document>')
+@bp.route('/<collection>/<document>')
 def show_alternative_annotations(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
@@ -69,7 +69,7 @@ def show_alternative_annotations(collection, document):
                            metadata=document_data.metadata)
 
 
-@bp.route('/collection/<collection>/<document>/pick')
+@bp.route('/<collection>/<document>/pick')
 def pick_annotation(collection, document):
     db = get_db()
     document_data = db.get_document_data(collection, document)
