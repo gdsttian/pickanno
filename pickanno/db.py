@@ -2,8 +2,8 @@ import os
 import json
 
 from collections import OrderedDict
-
 from glob import iglob
+from tempfile import mkstemp
 
 from flask import current_app as app
 
@@ -85,6 +85,25 @@ class FilesystemData(object):
                 collection, document, key, parse=True)
 
         return DocumentData(text, annsets, metadata)
+
+    def set_document_picks(self, collection, document, accepted, rejected):
+        data = self.get_document_metadata(collection, document)
+        data['accepted'] = accepted
+        data['rejected'] = rejected
+        path = os.path.join(self.root_dir, collection, document+'.json')
+        self.safe_write_file(path, json.dumps(data, indent=4, sort_keys=True))
+
+    @staticmethod
+    def safe_write_file(fn, text):
+        """Atomic write using os.rename()."""
+        fd, tmpfn = mkstemp()
+        app.logger.error('Saving to {}'.format(tmpfn))
+        with open(fd, 'wt') as f:
+            f.write(text)
+            # https://stackoverflow.com/a/2333979
+            f.flush()
+            os.fsync(f.fileno())
+        os.rename(tmpfn, fn)
 
     @staticmethod
     def read_ann(path, parse=True):

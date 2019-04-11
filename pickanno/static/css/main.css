@@ -11,6 +11,7 @@
 #spinner {
     color: white;
     display: none;
+    font-size: 12px;
 }
 
 .page-content {

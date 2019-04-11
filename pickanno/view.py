@@ -86,7 +86,15 @@ def pick_annotation(collection, document):
         accepted, rejected = [choice], [k for k in keys if k != choice]
     else:
         app.logger.error('invalid choice {}'.format(choice))
+
+    app.logger.info('{}/{}: accepted {}, rejected {}'.format(
+        collection, document, accepted, rejected))
+    db.set_document_picks(collection, document, accepted, rejected)
+
+    # Make sure the DB agrees
+    data = db.get_document_metadata(collection, document)
+
     return jsonify({
-        'accepted': accepted,
-        'rejected': rejected,
-    });
+        'accepted': data['accepted'],
+        'rejected': data['rejected'],
+    })
