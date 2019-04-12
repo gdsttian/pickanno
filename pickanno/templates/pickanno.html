@@ -30,4 +30,13 @@ window.onload = load;
   </div>
   <div class="pa-below">{{ content.below|safe }}</div>
 </div>
+<div>
+{% for label, url in config['SEARCH_CONFIG'] %}
+<hr/>
+<b>{{ label }}</b>:
+{% for s in annotated_strings %}
+| <a href="{{ url }}{{ s }}">{{ s }}</a>
+{% endfor %}
+{% endfor %}
+</div>
 {% endblock %}

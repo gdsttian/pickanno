@@ -28,6 +28,13 @@ HOTKEYS = {
     'z': CLEAR_PICKS,         # clear accept/reject
 }
 
+# Search links to add for candidate annotation strings
+
+SEARCH_CONFIG = [
+    ('Google', 'https://www.google.com/search?q='),
+    ('Wikipedia', 'http://en.wikipedia.org/wiki/Special:Search?search=')
+]
+
 # Document status constants (TODO: maybe not the right place for these)
 
 STATUS_COMPLETE = 'complete'

@@ -79,6 +79,7 @@ def show_alternative_annotations(collection, document):
     metadata = document_data.metadata
     content = visualize_candidates(document_data)
     legend = visualize_legend(document_data)
+    annotated_strings = document_data.annotated_strings()
     prev_url, next_url = _prev_and_next_url(
         request.endpoint, collection, document)
     return render_template('pickanno.html', **locals())

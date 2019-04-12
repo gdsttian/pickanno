@@ -40,6 +40,15 @@ class DocumentData(object):
                     filtered[key].append(a)
         self.annsets = filtered
 
+    def annotated_strings(self, unique=True, include_empty=False):
+        flattened = [a for anns in self.annsets.values() for a in anns]
+        texts = [a.text for a in flattened]
+        if not include_empty:
+            texts = [t for t in texts if t]
+        if unique:
+            texts = list(OrderedDict.fromkeys(texts))
+        return texts
+
     @property
     def candidate_annset(self):
         return self.annsets[self.metadata['candidate_set']]
