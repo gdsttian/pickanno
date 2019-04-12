@@ -11,6 +11,27 @@
       .visualization {
           width: {{ config['LINE_WIDTH'] }}px;
       }
+{% if config['ANNOTATION_TYPE_SUBSCRIPT'] %}
+.ann::after {
+    vertical-align: sub;
+    font-size: 60%;
+    line-height: normal;
+    font-variant: small-caps; /* default is `normal` */
+}
+{# TODO generalize #}
+.ann-tChemical::after {
+    content: " Chem";
+}
+.ann-tOrganism::after {
+    content: " Org";
+}
+.ann-tGene::after {
+    content: " Gene";
+}
+.ann-tDisease::after {
+    content: " Dis";
+}
+{% endif %}
     </style>
 {% endblock %}
 

@@ -10,6 +10,10 @@ FONT_FILE = 'OpenSans-Regular.ttf'    # filename in static/fonts
 FONT_FAMILY = 'Open Sans'             # font-family in css
 LINE_WIDTH = 800    # pixels, for visualizations
 
+# Add abbreviated type as subscript to spans
+
+ANNOTATION_TYPE_SUBSCRIPT = False # True
+
 # Key binding configuration
 
 HOTKEYS = {
