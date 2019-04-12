@@ -14,6 +14,10 @@ LINE_WIDTH = 800    # pixels, for visualizations
 
 ANNOTATION_TYPE_SUBSCRIPT = False # True
 
+# Highlight context mentions of candidate annotations
+
+HIGHLIGHT_CONTEXT_MENTIONS = True
+
 # Key binding configuration
 
 HOTKEYS = {

@@ -64,14 +64,37 @@ def visualize_candidates(document_data):
     # Adjust offsets for filtered annotations to zero at centered span start
     annsets = _adjust_offsets(annsets, span_start)
 
+    if not app.config['HIGHLIGHT_CONTEXT_MENTIONS']:
+        above_ann, left_ann, right_ann, below_ann = [], [], [], []
+    else:
+        # TODO annotations spanning boundaries (e.g. above-left)
+        above_ann, left_ann, right_ann, below_ann = (
+            _add_highlight_annotations(t, annsets)
+            for t in (above, left, right, below)
+        )
+
     so2html = standoff_to_html
     return {
-        'above': so2html(above, []),
-        'left': so2html(left, []),
+        'above': so2html(above, above_ann),
+        'left': so2html(left, left_ann),
         'spans': { k: so2html(span, a) for k, a in annsets.items() },
-        'right': so2html(right, []),
-        'below': so2html(below, []),
+        'right': so2html(right, right_ann),
+        'below': so2html(below, below_ann),
     }
+
+
+def _add_highlight_annotations(text, annsets):
+    from .so2html import Standoff, FORMATTING_TYPE_TAG_MAP
+    underline = [k for k, v in FORMATTING_TYPE_TAG_MAP.items() if v == 'u'][0]
+    flattened = [a for anns in annsets.values() for a in anns]
+    texts = [a.text for a in flattened if a.text]
+    patterns = [ re.compile(t, re.I) for t in texts ]
+    spans = []
+    for p in patterns:
+        for m in p.finditer(text):
+            start, end = m.span()
+            spans.append(Standoff(start, end, underline, 'u'))
+    return spans
 
 
 def _adjust_offsets(annsets, offset):
