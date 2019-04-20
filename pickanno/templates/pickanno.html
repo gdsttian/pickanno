@@ -35,7 +35,7 @@ window.onload = load;
 <hr/>
 <b>{{ label }}</b>:
 {% for s in annotated_strings %}
-| <a href="{{ url }}{{ s }}">{{ s }}</a>
+| <a href="{{ url }}{{ s }}" target="_blank" rel="noopener">{{ s }}</a>
 {% endfor %}
 {% endfor %}
 </div>
