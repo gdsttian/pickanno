@@ -1,6 +1,12 @@
 from flask import current_app as app
 
 
+def load_standoff(filename, encoding='utf-8'):
+    with open(filename, encoding=encoding) as f:
+        standoff = f.read()
+    return parse_standoff(standoff, filename)
+
+
 def parse_standoff(standoff, source='<INPUT>'):
     if isinstance(standoff, str):
         standoff = standoff.split('\n')
